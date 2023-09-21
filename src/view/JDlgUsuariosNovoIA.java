@@ -1,6 +1,11 @@
 package view;
 
 import hibernate.MslfUsuarios;
+import java.text.ParseException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.text.DefaultFormatterFactory;
+import javax.swing.text.MaskFormatter;
 import tools.Util;
 
 /*
@@ -16,6 +21,8 @@ import tools.Util;
 public class JDlgUsuariosNovoIA extends javax.swing.JDialog {
 
     JDlgUsuariosNovo jdlgUsuariosNovo;
+    MaskFormatter mascaraCpf;
+    MaskFormatter mascaraData;
     
     /**
      * Creates new form JDlgusuarioNovoIAa
@@ -25,6 +32,15 @@ public class JDlgUsuariosNovoIA extends javax.swing.JDialog {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Incluir Usuarios");
+        try {
+            mascaraCpf = new MaskFormatter("###.###.###-##");
+            mascaraData = new MaskFormatter("##/##/####");
+            
+        } catch (ParseException ex) {
+            Logger.getLogger(JDlgCliente.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        jFmtCpf.setFormatterFactory(new DefaultFormatterFactory(mascaraCpf));
+        jFmtData.setFormatterFactory(new DefaultFormatterFactory(mascaraData));
     }
 public MslfUsuarios viewbean(){
            MslfUsuarios usuarios = new MslfUsuarios();
