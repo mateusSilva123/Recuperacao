@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
 <!--
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 
@@ -39,18 +39,12 @@ made subject to such option by the copyright holder.
 
 Contributor(s):
 -->
-<hibernate-configuration>
-  <session-factory>
-    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://10.7.0.51:33062/db_mateus_fonseca?zeroDateTimeBehavior=convertToNull</property>
-    <property name="hibernate.connection.username">mateus_fonseca</property>
-    <property name="hibernate.connection.password">mateus_fonseca</property>
-    <mapping class="hibernate.MslfVendas"/>
-    <mapping class="hibernate.MslfUsuarios"/>
-    <mapping class="hibernate.MslfVendedor"/>
-    <mapping class="hibernate.MslfCliente"/>
-    <mapping class="hibernate.MslfEntregas"/>
-    <mapping class="hibernate.MslfJogo"/>
-  </session-factory>
-</hibernate-configuration>
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="db_mateus_fonseca"/>
+  <table-filter match-name="MSLF_Usuarios"/>
+  <table-filter match-name="MSLF_Vendedor"/>
+  <table-filter match-name="MSLF_Cliente"/>
+  <table-filter match-name="MSLF_Jogo"/>
+  <table-filter match-name="MSLF_Vendas"/>
+  <table-filter match-name="MSLF_Entregas"/>
+</hibernate-reverse-engineering>

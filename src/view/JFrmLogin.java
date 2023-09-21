@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package view;
-import bean.Usuarios;
+import hibernate.MslfUsuarios;
 import dao.UsuariosDAO;
 import javax.swing.JOptionPane;
 
@@ -16,7 +16,7 @@ public class JFrmLogin extends javax.swing.JFrame {
 
     int tentativas;
     UsuariosDAO usuariosDAO;
-    Usuarios usuarios;
+    MslfUsuarios usuarios;
     /**
      * Creates new form JFrmLogin
      */
@@ -126,8 +126,8 @@ public class JFrmLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
         String login = jTxtLogin.getText().trim();
         String senha = jPwfSenha.getText().trim();
-        usuarios = new Usuarios();
-        usuarios = (Usuarios) usuariosDAO.Validar(login, senha);
+        usuarios = new MslfUsuarios();
+        //usuarios = (MslfUsuarios) usuariosDAO.Validar(login, senha);
             if (tentativas < 4) {
             if (jTxtLogin.getText().equals("Fonseca") && jPwfSenha.getText().equals("Mateus123"))
             {
@@ -143,7 +143,7 @@ public class JFrmLogin extends javax.swing.JFrame {
                 this.dispose();
 
             }
-            else if (usuarios != null && login.equals(usuarios.getApelido()) && senha.equals(usuarios.getSenha())) {
+            else if (usuarios != null && login.equals(usuarios.getMslfApelido()) && senha.equals(usuarios.getMslfSenha())) {
                 JFrmPrincipal jFrmPrincipals = new JFrmPrincipal();
                 jFrmPrincipals.setVisible(true);
                 this.dispose();

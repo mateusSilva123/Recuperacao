@@ -5,35 +5,35 @@
  */
 package view;
 
-import hibernate.MslfCliente;
-import dao.ClienteDAO;
+import hibernate.MslfEntregas;
+import dao.EntregasDAO;
 import java.util.List;
 
 /**
  *
- * @author Marcos
+ * @author Mfdfdfarcoihiuhuhodfdfdfds
  */
-public class JDlgClientePesquisar extends javax.swing.JDialog {
+public class JDlgEntregasPesquisar extends javax.swing.JDialog {
 
-    private JDlgCliente jDlgCliente;
-    ClienteControle clienteControle;
+    private JDlgEntregas jDlgEntregas;
+    EntregasControle entregasControle;
     /**
      * Creates new form JDlgClientePesquisar
      */
-    public JDlgClientePesquisar(java.awt.Frame parent, boolean modal) {
+    public JDlgEntregasPesquisar(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Consulta de Cliente");
-        clienteControle = new ClienteControle();
-        ClienteDAO clienteDAO = new ClienteDAO();
-        List lista = clienteDAO.listALL();
-        clienteControle.setList(lista);
-        jTable1.setModel(clienteControle);                
+        setTitle("Consulta de Entregas");
+        entregasControle = new EntregasControle();
+        EntregasDAO entregasDAO = new EntregasDAO();
+        List lista = entregasDAO.listALL();
+        entregasControle.setList(lista);
+        jTable1.setModel(entregasControle);                
     }
     
-    public void setTelaAnterior(JDlgCliente jDlgCliente) {
-        this.jDlgCliente = jDlgCliente;
+    public void setTelaAnterior(JDlgEntregas jDlgEntregas) {
+        this.jDlgEntregas = jDlgEntregas;
     }
 
     /**
@@ -110,8 +110,8 @@ public class JDlgClientePesquisar extends javax.swing.JDialog {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         int rowSel = jTable1.getSelectedRow();
-        MslfCliente cliente = clienteControle.getbean(rowSel);
-        jDlgCliente.beanView(cliente);
+        MslfEntregas entregas = entregasControle.getbean(rowSel);
+        jDlgEntregas.beanView(entregas);
         setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -136,21 +136,23 @@ public class JDlgClientePesquisar extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgEntregasPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgEntregasPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgEntregasPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgEntregasPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgClientePesquisar dialog = new JDlgClientePesquisar(new javax.swing.JFrame(), true);
+                JDlgEntregasPesquisar dialog = new JDlgEntregasPesquisar(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

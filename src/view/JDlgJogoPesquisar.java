@@ -5,35 +5,33 @@
  */
 package view;
 
-import hibernate.MslfCliente;
-import dao.ClienteDAO;
+import hibernate.MslfJogo;
+import dao.JogoDAO;
 import java.util.List;
 
 /**
  *
  * @author Marcos
  */
-public class JDlgClientePesquisar extends javax.swing.JDialog {
+public class JDlgJogoPesquisar extends javax.swing.JDialog {
 
-    private JDlgCliente jDlgCliente;
-    ClienteControle clienteControle;
-    /**
-     * Creates new form JDlgClientePesquisar
-     */
-    public JDlgClientePesquisar(java.awt.Frame parent, boolean modal) {
+    private JDlgJogo jDlgJogo;
+    JogoControle jogoControle;
+    
+    public JDlgJogoPesquisar(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Consulta de Cliente");
-        clienteControle = new ClienteControle();
-        ClienteDAO clienteDAO = new ClienteDAO();
-        List lista = clienteDAO.listALL();
-        clienteControle.setList(lista);
-        jTable1.setModel(clienteControle);                
+        setTitle("Consulta de Jogo");
+        jogoControle = new JogoControle();
+        JogoDAO vendedorDAO = new JogoDAO();
+        List lista = vendedorDAO.listALL();
+        jogoControle.setList(lista);
+        jTable1.setModel(jogoControle);                
     }
     
-    public void setTelaAnterior(JDlgCliente jDlgCliente) {
-        this.jDlgCliente = jDlgCliente;
+    public void setTelaAnterior(JDlgJogo jDlgJogo) {
+        this.jDlgJogo = jDlgJogo;
     }
 
     /**
@@ -110,8 +108,8 @@ public class JDlgClientePesquisar extends javax.swing.JDialog {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         int rowSel = jTable1.getSelectedRow();
-        MslfCliente cliente = clienteControle.getbean(rowSel);
-        jDlgCliente.beanView(cliente);
+        MslfJogo jogo = jogoControle.getbean(rowSel);
+        jDlgJogo.beanView(jogo);
         setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -136,21 +134,27 @@ public class JDlgClientePesquisar extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgVendedorPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgVendedorPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgVendedorPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgVendedorPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgClientePesquisar dialog = new JDlgClientePesquisar(new javax.swing.JFrame(), true);
+                JDlgVendedorPesquisar dialog = new JDlgVendedorPesquisar(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

@@ -5,7 +5,7 @@
  */
 package dao;
 
-import bean.Usuarios;
+import hibernate.MslfUsuarios;
 import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;

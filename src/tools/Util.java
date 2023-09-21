@@ -6,6 +6,7 @@
 package tools;
 
 import java.util.Date;
+import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -24,6 +25,7 @@ public class Util {
     public static void limparCampos(JComponent... vetComp) {
         for (int i = 0; i < vetComp.length; i++) {
             ((JTextField) vetComp[i]).setText("");
+            ((JComboBox) vetComp[i]).setSelectedIndex(-1);
 
         }
 
@@ -39,7 +41,7 @@ public class Util {
         return false;
     }
 
-    public static int Strint(String cad) {
+    public static int strInt(String cad) {
         return 0;
     }
 

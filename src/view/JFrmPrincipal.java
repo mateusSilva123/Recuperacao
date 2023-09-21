@@ -16,7 +16,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
      */
     public JFrmPrincipal() {
         initComponents();
-        setTitle("Livraria");
+        setTitle("Jogos");
         setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -170,7 +170,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMniVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMniVendasActionPerformed
         // TODO add your handling code here:
-        JDlgVendas jDlgVendass = new JDlgVendas(this, true);
+        JDlgVendasNovo jDlgVendass = new JDlgVendasNovo(this, true);
         jDlgVendass.setVisible(true);
     }//GEN-LAST:event_jMniVendasActionPerformed
 
@@ -185,7 +185,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMniLivroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMniLivroActionPerformed
         // TODO add your handling code here:
-        JDlgJogo jDlgLivros = new JDlgJogo(this, true);
+        JDlgJogo jDlgJogo = new JDlgJogo(this, true);
         jDlgJogo.setVisible(true);
     }//GEN-LAST:event_jMniLivroActionPerformed
 
@@ -203,7 +203,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMniUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMniUsuarioActionPerformed
         // TODO add your handling code here:
-        JDlgUsuarios jDlgUsuarios = new JDlgUsuarios(this, true);
+        JDlgUsuariosNovo jDlgUsuarios = new JDlgUsuariosNovo(this, true);
         jDlgUsuarios.setVisible(true);
     }//GEN-LAST:event_jMniUsuarioActionPerformed
 
