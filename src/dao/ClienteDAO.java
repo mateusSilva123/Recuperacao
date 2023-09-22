@@ -6,6 +6,7 @@
 package dao;
 
 import hibernate.MslfCliente;
+import java.util.ArrayList;
 import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
@@ -14,7 +15,11 @@ import org.hibernate.criterion.Restrictions;
  *
  */
 public class ClienteDAO extends DAO_Abstract{
+public  ClienteDAO(){
 
+
+
+}
     @Override
     public void insert(Object object) {
        session.beginTransaction();
@@ -50,17 +55,12 @@ public class ClienteDAO extends DAO_Abstract{
         return Lista.get(0);
     }
 
-    @Override
+      @Override
     public List listALL() {
         session.beginTransaction();
-        Criteria criteria = session.createCriteria(ClienteDAO.class);
+        Criteria criteria = session.createCriteria(MslfCliente.class);
         List Lista = criteria.list();
         session.getTransaction().commit();
-        return Lista;
+        return (ArrayList) Lista;
     }
-    
-    public static void main(String[] args) {
-        ClienteDAO clienteAO = new ClienteDAO();
-    }
-    
 }

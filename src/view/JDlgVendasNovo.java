@@ -7,7 +7,7 @@ package view;
 import hibernate.MslfVendas;
 import dao.VendasDAO;
 import java.util.List;
-import view.JDlgUsuariosNovoIA;
+import view.JDlgVendasNovoIA;
 import view.VendasControle;
 import tools.Util;
 /**
@@ -123,15 +123,15 @@ public class JDlgVendasNovo extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
-        // TODO add your handling code here:
-        jDlgVendasNovoIA.setTitle("Alteração");
-        jDlgVendasNovoIA.setVisible(true);
+        if( Util.pergunta("Você deseja alterar?")== true){
+        this.dispose();
+       jDlgVendasNovoIA.setVisible(true);
+       jDlgVendasNovoIA.setTitle("Alteração");
+        }
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
-        // TODO add your handling code here:
-        //Util.perguntar("deseja escluir?");
-        if ((Util.pergunta("excluir?")) == true) {
+       if ((Util.pergunta("Excluir?")) == true) {
             int sel = jTable1.getSelectedRow();
             vendas = vendasControle.getbean(sel);
             vendasDAO.delete(vendas);
@@ -140,7 +140,7 @@ public class JDlgVendasNovo extends javax.swing.JDialog {
             vendasControle.setList(lista);
         } else
         {
-           // Util.mensagem("Exclusão cancelada");
+           Util.mensagem("Exclusão cancelada");
         
         }
     }//GEN-LAST:event_jBtnExcluirActionPerformed

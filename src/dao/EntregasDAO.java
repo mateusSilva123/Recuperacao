@@ -58,9 +58,4 @@ public class EntregasDAO extends DAO_Abstract{
         session.getTransaction().commit();
         return Lista;
     }
-    
-    public static void main(String[] args) {
-        EntregasDAO entregasAO = new EntregasDAO();
-    }
-    
 }

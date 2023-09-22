@@ -15,8 +15,13 @@ import org.hibernate.criterion.Restrictions;
  *
  */
 public class UsuariosDAO extends DAO_Abstract{
+public  UsuariosDAO(){
 
-    @Override
+
+
+}
+
+@Override
     public void insert(Object object) {
        session.beginTransaction();
        session.save(object);
@@ -61,7 +66,18 @@ public class UsuariosDAO extends DAO_Abstract{
     }
     
     public static void main(String[] args) {
+        MslfUsuarios usuarios = new MslfUsuarios();
+        usuarios.setMslfIdUsuarios(88);
+        usuarios.setMslfNome("Bakarakas");
+        usuarios.setMslfApelido("bks");
+        usuarios.setMslfCpf("345");
+        usuarios.setMslfNivel(2);
+        usuarios.setMslfAtivo("s");
+        usuarios.setMslfSenha("1qs453");
+        
         UsuariosDAO usuariosDAO = new UsuariosDAO();
+       usuariosDAO.insert(usuarios);
+        System.out.println(usuarios);
     }
     
 }

@@ -23,12 +23,12 @@ public class JDlgUsuariosNovo extends javax.swing.JDialog {
     UsuariosDAO usuariosDAO;
     MslfUsuarios usuarios;
     UsuariosControle usuariosControle;
-    
     JDlgUsuariosNovoIA jDlgUsuariosNovoIA;
    
     public JDlgUsuariosNovo(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setLocationRelativeTo(null);
         setTitle("Usuarios");
         
         jDlgUsuariosNovoIA = new JDlgUsuariosNovoIA(null, true);
@@ -123,14 +123,15 @@ public class JDlgUsuariosNovo extends javax.swing.JDialog {
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
         // TODO add your handling code here:
-        jDlgUsuariosNovoIA.setTitle("Alteração");
-        jDlgUsuariosNovoIA.setVisible(true);
+        if( Util.pergunta("Você deseja alterar?")== true){
+        this.dispose();
+       jDlgUsuariosNovoIA.setVisible(true);
+       jDlgUsuariosNovoIA.setTitle("Alteração");
+        }
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
-        // TODO add your handling code here:
-        //Util.perguntar("deseja escluir?");
-        if ((Util.pergunta("excluir?")) == true) {
+        if ((Util.pergunta("Excluir?")) == true) {
             int sel = jTable1.getSelectedRow();
             usuarios = usuariosControle.getbean(sel);
             usuariosDAO.delete(usuarios);
@@ -139,7 +140,7 @@ public class JDlgUsuariosNovo extends javax.swing.JDialog {
             usuariosControle.setList(lista);
         } else
         {
-           // Util.mensagem("Exclusão cancelada");
+           Util.mensagem("Exclusão cancelada");
         
         }
     }//GEN-LAST:event_jBtnExcluirActionPerformed

@@ -13,6 +13,7 @@ import java.text.ParseException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import static javax.swing.JOptionPane.YES_NO_OPTION;
 import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
 import tools.Util;
@@ -37,9 +38,9 @@ public class JDlgCliente extends javax.swing.JDialog {
         initComponents();
         setTitle("Cliente");
         setLocationRelativeTo(null);
-        Util.habilitar(false, jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, 
-               jTxtEndereco, jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboSexo, jCboUsuarios, 
-               jFmtCPF, jFmtCep, jFmtTelefone, jBtnCancelar, jBtnConfirmar);
+        Util.habilitar(false, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios, jBtnCancelar, jBtnConfirmar);
         
         try {
             mascaraCpf = new MaskFormatter("###.###.###-##");
@@ -58,7 +59,7 @@ public class JDlgCliente extends javax.swing.JDialog {
         MslfCliente cliente = new MslfCliente(); // criou o bean
         
         cliente.setMslfUsuarios((MslfUsuarios) jCboUsuarios.getSelectedItem());
-        // cliente.setMslfIdCliente(Util.intStr(jTxtID));
+        cliente.setMslfIdCliente(Util.strInt(jTxtID.getText()));
         cliente.setMslfNome(jTxtNome.getText() );
         cliente.setMslfApelido(jTxtApelido.getText() );
         cliente.setMslfBairro(jTxtBairro.getText() );
@@ -73,19 +74,13 @@ public class JDlgCliente extends javax.swing.JDialog {
         cliente.setMslfRg(jTxtRG.getText() );
         cliente.setMslfSenha(jPwfSenha.getText() );
         cliente.setMslfSexo((String) jCboSexo.getSelectedItem());
-        //vendedor.setDataNascimento( jFmtData.getText() );
-//        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-//        try {
-//            cliente.setMslfDataNasc(formato.parse(jFmtData.getText()));
-//        } catch (ParseException ex) {
-//            Logger.getLogger(JDlgVendedor.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+        cliente.setMslfDataNasc(Util.strDate(jFmtData.getText()));
         
         return cliente;
     };
     
      public void beanView(MslfCliente cliente) {
-        // jTxtID.setText( Util.intStr(cliente.getMslfIdCliente()) ); // AQUI
+        jTxtID.setText( Util.intStr(cliente.getMslfIdCliente()) ); // AQUI
         jCboUsuarios.setSelectedItem(cliente.getMslfUsuarios());
         
         jTxtNome.setText( cliente.getMslfNome() );
@@ -102,8 +97,7 @@ public class JDlgCliente extends javax.swing.JDialog {
         jTxtRG.setText( cliente.getMslfRg());
         jCboSexo.setSelectedItem(cliente.getMslfSexo());
         jPwfSenha.setText( cliente.getMslfSenha());
-           // SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy"); // AQUI
-           // jFmtData.setText( formato.format(cliente.getMslfDataNasc())); // AQUI
+        jFmtData.setText(Util.dateStr(cliente.getMslfDataNasc())); // AQUI
     };
     /**
      * This method is called from within the constructor to initialize the form.
@@ -458,12 +452,13 @@ public class JDlgCliente extends javax.swing.JDialog {
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
         // TODO add your handling code here:
-       Util.habilitar(false, jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, 
-               jTxtEndereco, jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboSexo, jCboUsuarios, 
-               jFmtCPF, jFmtCep, jFmtTelefone, jBtnCancelar, jBtnConfirmar);
-        Util.limparCampos(jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
-                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboUsuarios, jFmtCPF, jFmtCep, jFmtTelefone, jCboSexo);
-        JOptionPane.showMessageDialog(null, "Operação Cancelada");
+       Util.habilitar(false, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios, jBtnCancelar, jBtnConfirmar);
+        Util.limparCampos(jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios);
+        Util.mensagem("Operação Cancelada");
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
@@ -471,57 +466,61 @@ public class JDlgCliente extends javax.swing.JDialog {
         JDlgClientePesquisar jDlgClientePesquisar = new JDlgClientePesquisar(null, true);
         jDlgClientePesquisar.setTelaAnterior(this);        
         jDlgClientePesquisar.setVisible(true);
-//        String resp = JOptionPane.showInputDialog(null, "Entre com a chave primária (PK)", "Pesquisa", 2);
-//        ClienteDAO clienteDAO = new ClienteDAO();
-//        int id = Integer.valueOf(resp);
-//        Cliente cliente = (Cliente) clienteDAO.list(id);
-//        beanView(cliente);
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
-        Util.habilitar(true, jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, 
-                jTxtEndereco, jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboSexo, jCboUsuarios,
-                jFmtCPF, jFmtCep, jFmtTelefone, jBtnExlcuir, jBtnPesquisar, jBtnIncluir, jBtnAlterar);
-        Util.limparCampos(jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco, 
-                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboSexo, jCboUsuarios, jFmtCPF, jFmtCep, jFmtTelefone);
+        Util.habilitar(true, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios, jBtnExlcuir, jBtnPesquisar, jBtnIncluir, jBtnAlterar);
+        Util.limparCampos(jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios);
         incluindo = true;
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
         // TODO add your handling code here:
-         Util.habilitar(true, jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, 
-                jTxtEndereco, jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboSexo, jCboUsuarios,
-                jFmtCPF, jFmtCep, jFmtTelefone, jBtnExlcuir, jBtnPesquisar, jBtnIncluir, jBtnAlterar);
+         Util.habilitar(true, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios, jBtnExlcuir, jBtnPesquisar, jBtnIncluir, jBtnAlterar);
         incluindo = false;
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExlcuirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExlcuirActionPerformed
-        // TODO add your handling code here:
-        if ((Util.pergunta("Deseja excluir o registor?") == true)){
+        if ((Util.pergunta("Deseja excluir o registro?") == true)){
+            MslfCliente cliente = viewBean();
+            ClienteDAO clienteDAO = new ClienteDAO();
+            clienteDAO.delete(cliente);
+            Util.mensagem("Exclusão realizada com sucesso");
         } else {
-            Util.mensagem("Exclusão cancelada");
+            Util.mensagem("Exclusão cancelada com Sucesso");
         }      
-        Util.limparCampos(jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco, 
-                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboSexo, jCboUsuarios, jFmtCPF, jFmtCep, jFmtTelefone);
+        Util.limparCampos(jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios);
     }//GEN-LAST:event_jBtnExlcuirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
-        // TODO add your handling code here:
-//         MslfCliente cliente = viewBean(); // criou o bean
-//        ClienteDAO clienteDAO = new ClienteDAO();
-//        
-//        if (incluindo == true) {
-//            clienteDAO.insert(cliente);
-//        } else {
-//            clienteDAO.update(cliente);
-//        }
-//        
-       Util.habilitar(false, jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, 
-               jTxtEndereco, jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboSexo, jCboUsuarios, 
-               jFmtCPF, jFmtCep, jFmtTelefone, jBtnCancelar, jBtnConfirmar);
-        Util.limparCampos(jFmtData, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco, 
-                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jCboSexo, jCboUsuarios, jFmtCPF, jFmtCep, jFmtTelefone);
+        if (incluindo == true) {
+              MslfCliente cliente = viewBean();  
+        ClienteDAO clienteDAO = new ClienteDAO();
+        clienteDAO.insert(cliente);
+             Util.habilitar(false, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios, jBtnCancelar, jBtnConfirmar);
+        }else{
+            MslfCliente cliente = viewBean();  
+        ClienteDAO clienteDAO = new ClienteDAO();
+        clienteDAO.update(cliente);
+         Util.habilitar(true, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios, jBtnExlcuir, jBtnPesquisar, jBtnIncluir, jBtnAlterar);
+         Util.limparCampos(jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
+                jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
+                jFmtTelefone, jCboSexo, jCboUsuarios);
+    }                                             
+        
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 
     private void jFmtCepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtCepActionPerformed
