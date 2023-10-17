@@ -7,8 +7,8 @@ package view;
 import hibernate.MslfVendas;
 import dao.VendasDAO;
 import java.util.List;
-import view.JDlgVendasNovoIA;
-import view.VendasControle;
+import view.IA.JDlgVendasNovoIA;
+import view.controle.VendasControle;
 import tools.Util;
 /**
  *

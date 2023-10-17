@@ -5,6 +5,7 @@
  */
 package view;
 
+import view.pesquisar.JDlgJogoPesquisar;
 import hibernate.MslfJogo;
 import dao.JogoDAO;
 import java.text.SimpleDateFormat;

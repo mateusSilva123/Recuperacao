@@ -5,7 +5,7 @@
  */
 package dao;
 
-import hibernate.MslfJogo;
+import bean.MslfJogo;
 import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;

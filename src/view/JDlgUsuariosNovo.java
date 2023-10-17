@@ -7,8 +7,8 @@ package view;
 import hibernate.MslfUsuarios;
 import dao.UsuariosDAO;
 import java.util.List;
-import view.JDlgUsuariosNovoIA;
-import view.UsuariosControle;
+import view.IA.JDlgUsuariosNovoIA;
+import view.controle.UsuariosControle;
 import tools.Util;
 /**
  *
@@ -16,12 +16,9 @@ import tools.Util;
  */
 public class JDlgUsuariosNovo extends javax.swing.JDialog {
 
-    /**
-     * Creates new form JDlgUsuariosNovo
-     */
-   // Declaração de atributo
     UsuariosDAO usuariosDAO;
     MslfUsuarios usuarios;
+    //UsuariosControle usuariosControle;
     UsuariosControle usuariosControle;
     JDlgUsuariosNovoIA jDlgUsuariosNovoIA;
    
@@ -32,10 +29,14 @@ public class JDlgUsuariosNovo extends javax.swing.JDialog {
         setTitle("Usuarios");
         
         jDlgUsuariosNovoIA = new JDlgUsuariosNovoIA(null, true);
+          usuariosControle = new  UsuariosControle();
+         jDlgUsuariosNovoIA = new JDlgUsuariosNovoIA(null, true);
         usuariosDAO = new UsuariosDAO();
+        //List lista = UsuariosDAO.listALL();
         List lista = usuariosDAO.listALL();
-        usuariosControle = new UsuariosControle();
-        usuariosControle.setList(lista);
+        
+       usuariosControle.setList(lista);
+        jTable1.setModel(usuariosControle);
     }
 
     /**
@@ -135,7 +136,6 @@ public class JDlgUsuariosNovo extends javax.swing.JDialog {
             int sel = jTable1.getSelectedRow();
             usuarios = usuariosControle.getbean(sel);
             usuariosDAO.delete(usuarios);
-            // Altera os registro da jtable
             List lista = usuariosDAO.listALL();
             usuariosControle.setList(lista);
         } else
