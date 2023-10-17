@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
-import hibernate.MslfVendas;
+package view.controle;
+import bean.MslfJogo;
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
 /**
  *
- * @author u13766540670
+ * @author dfdfdfdfd
  */
-public class VendasControle extends AbstractTableModel {
+public class JogoControle extends AbstractTableModel {
 private List lista;
 
 public void setList(List lista){
@@ -21,8 +21,8 @@ public  void setlist(List lista){
 this.lista = lista;
 }
 
-public MslfVendas getbean(int linha){
-return (MslfVendas) lista.get(linha);
+public MslfJogo getbean(int linha){
+return (MslfJogo) lista.get(linha);
 }
     @Override
     public int getRowCount() {
@@ -36,18 +36,18 @@ return (MslfVendas) lista.get(linha);
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        MslfVendas vendas = (MslfVendas) lista.get(rowIndex);
+        MslfJogo jogo = (MslfJogo) lista.get(rowIndex);
       if (columnIndex == 0) {
-             return vendas.getMslfIdVendas();
+             return jogo.getMslfIdJogo();
         }
         if (columnIndex == 1) {
-             return vendas.getMslfCliente();
+             return jogo.getMslfEstoque();
         }
         if (columnIndex == 2) {
-             return vendas.getMslfVendedor();
+             return jogo.getMslfPreco();
         }
         if (columnIndex == 3) {
-             return vendas.getMslfValorTotal();
+             return jogo.getMslfDesconto();
         
         }
        return null;
@@ -58,13 +58,13 @@ return (MslfVendas) lista.get(linha);
              return "ID";
         }
         if (columnIndex == 1) {
-             return "Cliente";
+             return "Estoque";
         }
         if (columnIndex == 2) {
-             return "Vendedor";
+             return "Preço";
         }
         if (columnIndex == 3) {
-             return "Valor Total";
+             return "Desconto";
         }
        
     return null;

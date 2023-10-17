@@ -1,5 +1,5 @@
-package hibernate;
-// Generated 18/09/2023 13:15:55 by Hibernate Tools 4.3.1
+package bean;
+// Generated 16/10/2023 09:17:23 by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -177,6 +177,7 @@ public class MslfEntregas  implements java.io.Serializable {
     public void setMslfNumeroCasa(int mslfNumeroCasa) {
         this.mslfNumeroCasa = mslfNumeroCasa;
     }
+
     @Temporal(TemporalType.DATE)
     @Column(name="MSLF_data", nullable=false, length=10)
     public Date getMslfData() {
@@ -186,7 +187,6 @@ public class MslfEntregas  implements java.io.Serializable {
     public void setMslfData(Date mslfData) {
         this.mslfData = mslfData;
     }
-
 
 
 

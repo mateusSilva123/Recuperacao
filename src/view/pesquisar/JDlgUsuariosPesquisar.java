@@ -3,37 +3,39 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package view.pesquisar;
 
-import hibernate.MslfEntregas;
-import dao.EntregasDAO;
+import view.controle.UsuariosControle;
+import bean.MslfUsuarios;
+import dao.UsuariosDAO;
 import java.util.List;
+import view.JDlgUsuarios;
 
 /**
  *
- * @author Mfdfdfarcoihiuhuhodfdfdfds
+ * @author u04127224290
  */
-public class JDlgEntregasPesquisar extends javax.swing.JDialog {
+public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
 
-    private JDlgEntregas jDlgEntregas;
-    EntregasControle entregasControle;
+    private JDlgUsuarios jDlgUsuarios;
+    UsuariosControle usuariosControle;
     /**
-     * Creates new form JDlgClientePesquisar
+     * Creates new form JDlgUsuariosPesquisar
      */
-    public JDlgEntregasPesquisar(java.awt.Frame parent, boolean modal) {
+    public JDlgUsuariosPesquisar(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Consulta de Entregas");
-        entregasControle = new EntregasControle();
-        EntregasDAO entregasDAO = new EntregasDAO();
-        List lista = entregasDAO.listALL();
-        entregasControle.setList(lista);
-        jTable1.setModel(entregasControle);                
+        setTitle("Consulta de Usuarios");
+        usuariosControle = new UsuariosControle();
+        UsuariosDAO usuariosDAO = new UsuariosDAO();
+        List lista = usuariosDAO.listALL();
+        usuariosControle.setList(lista);
+        jTable1.setModel(usuariosControle);                
     }
     
-    public void setTelaAnterior(JDlgEntregas jDlgEntregas) {
-        this.jDlgEntregas = jDlgEntregas;
+    public void setTelaAnterior(JDlgUsuarios jDlgUsuarios) {
+        this.jDlgUsuarios = jDlgUsuarios;
     }
 
     /**
@@ -110,8 +112,8 @@ public class JDlgEntregasPesquisar extends javax.swing.JDialog {
     private void jBtnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOkActionPerformed
         // TODO add your handling code here:
         int rowSel = jTable1.getSelectedRow();
-        MslfEntregas entregas = entregasControle.getbean(rowSel);
-        jDlgEntregas.beanView(entregas);
+        MslfUsuarios usuarios = usuariosControle.getbean(rowSel);
+        jDlgUsuarios.beanView(usuarios);
         setVisible(false);
     }//GEN-LAST:event_jBtnOkActionPerformed
 
@@ -137,13 +139,13 @@ public class JDlgEntregasPesquisar extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgEntregasPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgUsuariosPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgEntregasPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgUsuariosPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgEntregasPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgUsuariosPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgEntregasPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgUsuariosPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -153,7 +155,7 @@ public class JDlgEntregasPesquisar extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgEntregasPesquisar dialog = new JDlgEntregasPesquisar(new javax.swing.JFrame(), true);
+                JDlgUsuariosPesquisar dialog = new JDlgUsuariosPesquisar(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

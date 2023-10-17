@@ -1,5 +1,5 @@
-package hibernate;
-// Generated 18/09/2023 13:15:55 by Hibernate Tools 4.3.1
+package bean;
+// Generated 16/10/2023 09:17:23 by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -47,7 +47,7 @@ public class MslfUsuarios  implements java.io.Serializable {
         this.mslfNivel = mslfNivel;
         this.mslfAtivo = mslfAtivo;
     }
-   
+    
      @Id 
 
     
@@ -130,9 +130,20 @@ public class MslfUsuarios  implements java.io.Serializable {
         this.mslfAtivo = mslfAtivo;
     }
 
-
-
-
+    @Override
+    public String toString() {
+    return getMslfNome();
+    }
+    
+    public boolean equals(Object object) {
+        if (object instanceof MslfUsuarios) {
+            MslfUsuarios usuarios = (MslfUsuarios) object;
+            if (this.getMslfIdUsuarios()== usuarios.getMslfIdUsuarios()) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 

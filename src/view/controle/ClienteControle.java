@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
-import hibernate.MslfEntregas;
+package view.controle;
+import bean.MslfCliente;
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
 /**
  *
- * @author dfdfdfdfd
+ * @author u04127224290
  */
-public class EntregasControle extends AbstractTableModel {
+public class ClienteControle extends AbstractTableModel {
 private List lista;
 
 public void setList(List lista){
@@ -21,8 +21,8 @@ public  void setlist(List lista){
 this.lista = lista;
 }
 
-public MslfEntregas getbean(int linha){
-return (MslfEntregas) lista.get(linha);
+public MslfCliente getbean(int linha){
+return (MslfCliente) lista.get(linha);
 }
     @Override
     public int getRowCount() {
@@ -36,18 +36,18 @@ return (MslfEntregas) lista.get(linha);
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        MslfEntregas entregas = (MslfEntregas) lista.get(rowIndex);
+        MslfCliente cliente = (MslfCliente) lista.get(rowIndex);
       if (columnIndex == 0) {
-             return entregas.getMslfIdEntregas();
+             return cliente.getMslfIdCliente();
         }
         if (columnIndex == 1) {
-             return entregas.getMslfEndereco();
+             return cliente.getMslfNome();
         }
         if (columnIndex == 2) {
-             return entregas.getMslfVendedor();
+             return cliente.getMslfApelido();
         }
         if (columnIndex == 3) {
-             return entregas.getMslfCliente();
+             return cliente.getMslfCpf();
         
         }
        return null;
@@ -58,13 +58,13 @@ return (MslfEntregas) lista.get(linha);
              return "ID";
         }
         if (columnIndex == 1) {
-             return "Endereço";
+             return "Nome";
         }
         if (columnIndex == 2) {
-             return "Vendedor";
+             return "Apelido";
         }
         if (columnIndex == 3) {
-             return "Cliente";
+             return "CPF";
         }
        
     return null;

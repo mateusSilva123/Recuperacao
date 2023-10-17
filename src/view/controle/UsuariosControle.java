@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
-import hibernate.MslfUsuarios;
+package view.controle;
+import bean.MslfUsuarios;
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
 /**
  *
- * @author u13766540670
+ * @author u04127224290
  */
 public class UsuariosControle extends AbstractTableModel {
 private List lista;

@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
-import hibernate.MslfCliente;
+package view.controle;
+import bean.MslfVendas;
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
 /**
  *
- * @author u13766540670
+ * @author u04122722490
  */
-public class ClienteControle extends AbstractTableModel {
+public class VendasControle extends AbstractTableModel {
 private List lista;
 
 public void setList(List lista){
@@ -21,8 +21,8 @@ public  void setlist(List lista){
 this.lista = lista;
 }
 
-public MslfCliente getbean(int linha){
-return (MslfCliente) lista.get(linha);
+public MslfVendas getbean(int linha){
+return (MslfVendas) lista.get(linha);
 }
     @Override
     public int getRowCount() {
@@ -36,18 +36,18 @@ return (MslfCliente) lista.get(linha);
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        MslfCliente cliente = (MslfCliente) lista.get(rowIndex);
+        MslfVendas vendas = (MslfVendas) lista.get(rowIndex);
       if (columnIndex == 0) {
-             return cliente.getMslfIdCliente();
+             return vendas.getMslfIdVendas();
         }
         if (columnIndex == 1) {
-             return cliente.getMslfNome();
+             return vendas.getMslfCliente();
         }
         if (columnIndex == 2) {
-             return cliente.getMslfApelido();
+             return vendas.getMslfVendedor();
         }
         if (columnIndex == 3) {
-             return cliente.getMslfCpf();
+             return vendas.getMslfValorTotal();
         
         }
        return null;
@@ -58,13 +58,13 @@ return (MslfCliente) lista.get(linha);
              return "ID";
         }
         if (columnIndex == 1) {
-             return "Nome";
+             return "Cliente";
         }
         if (columnIndex == 2) {
-             return "Apelido";
+             return "Vendedor";
         }
         if (columnIndex == 3) {
-             return "CPF";
+             return "Valor Total";
         }
        
     return null;

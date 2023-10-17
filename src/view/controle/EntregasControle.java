@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
-import hibernate.MslfJogo;
+package view.controle;
+import bean.MslfEntregas;
 import javax.swing.table.AbstractTableModel;
 import java.util.List;
 /**
  *
- * @author dfdfdfdfd
+ * @author u04127224290
  */
-public class JogoControle extends AbstractTableModel {
+public class EntregasControle extends AbstractTableModel {
 private List lista;
 
 public void setList(List lista){
@@ -21,8 +21,8 @@ public  void setlist(List lista){
 this.lista = lista;
 }
 
-public MslfJogo getbean(int linha){
-return (MslfJogo) lista.get(linha);
+public MslfEntregas getbean(int linha){
+return (MslfEntregas) lista.get(linha);
 }
     @Override
     public int getRowCount() {
@@ -36,18 +36,18 @@ return (MslfJogo) lista.get(linha);
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        MslfJogo jogo = (MslfJogo) lista.get(rowIndex);
+        MslfEntregas entregas = (MslfEntregas) lista.get(rowIndex);
       if (columnIndex == 0) {
-             return jogo.getMslfIdJogo();
+             return entregas.getMslfIdEntregas();
         }
         if (columnIndex == 1) {
-             return jogo.getMslfEstoque();
+             return entregas.getMslfEndereco();
         }
         if (columnIndex == 2) {
-             return jogo.getMslfPreco();
+             return entregas.getMslfVendedor();
         }
         if (columnIndex == 3) {
-             return jogo.getMslfDesconto();
+             return entregas.getMslfCliente();
         
         }
        return null;
@@ -58,13 +58,13 @@ return (MslfJogo) lista.get(linha);
              return "ID";
         }
         if (columnIndex == 1) {
-             return "Estoque";
+             return "Endereço";
         }
         if (columnIndex == 2) {
-             return "Preço";
+             return "Vendedor";
         }
         if (columnIndex == 3) {
-             return "Desconto";
+             return "Cliente";
         }
        
     return null;

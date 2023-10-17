@@ -4,39 +4,39 @@
  * and open the template in the editor.
  */
 package view;
-import hibernate.MslfVendas;
-import dao.VendasDAO;
+import bean.MslfJogo;
+import dao.JogoDAO;
 import java.util.List;
-import view.JDlgVendasNovoIA;
-import view.VendasControle;
+import view.IA.JDlgJogoNovoIA;
+import view.controle.JogoControle;
 import tools.Util;
 /**
  *
- * @author u13766540670
+ * @author eu
  */
-public class JDlgVendasNovo extends javax.swing.JDialog {
+public class JDlgJogoNovo extends javax.swing.JDialog {
 
     /**
-     * Creates new form JDlgUsuariosNovo
+     * Creates new form koko
      */
    // Declaração de atributo
-    VendasDAO vendasDAO;
-    MslfVendas vendas;
-    VendasControle vendasControle;
+    JogoDAO jogoDAO;
+    MslfJogo jogo;
+    JogoControle jogoControle;
     
-    JDlgVendasNovoIA jDlgVendasNovoIA;
+    JDlgJogoNovoIA jDlgJogoNovoIA;
    
-    public JDlgVendasNovo(java.awt.Frame parent, boolean modal) {
+    public JDlgJogoNovo(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Vendas");
+        setTitle("Jogo");
         
-        jDlgVendasNovoIA = new JDlgVendasNovoIA(null, true);
-        vendasDAO = new VendasDAO();
-        List lista = vendasDAO.listALL();
-        vendasControle = new VendasControle();
-        vendasControle.setList(lista);
+        jDlgJogoNovoIA = new JDlgJogoNovoIA(null, true);
+        jogoDAO = new JogoDAO();
+        List lista = jogoDAO.listALL();
+        jogoControle = new JogoControle();
+        jogoControle.setList(lista);
     }
 
     /**
@@ -118,26 +118,26 @@ public class JDlgVendasNovo extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
-        jDlgVendasNovoIA.setTitle("Inclusão");
-        jDlgVendasNovoIA.setVisible(true);
+        jDlgJogoNovoIA.setTitle("Inclusão");
+        jDlgJogoNovoIA.setVisible(true);
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
         if( Util.pergunta("Você deseja alterar?")== true){
         this.dispose();
-       jDlgVendasNovoIA.setVisible(true);
-       jDlgVendasNovoIA.setTitle("Alteração");
+       jDlgJogoNovoIA.setVisible(true);
+       jDlgJogoNovoIA.setTitle("Alteração");
         }
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
        if ((Util.pergunta("Excluir?")) == true) {
             int sel = jTable1.getSelectedRow();
-            vendas = vendasControle.getbean(sel);
-            vendasDAO.delete(vendas);
+            jogo = jogoControle.getbean(sel);
+            jogoDAO.delete(jogo);
             // Altera os registro da jtable
-            List lista = vendasDAO.listALL();
-            vendasControle.setList(lista);
+            List lista = jogoDAO.listALL();
+            jogoControle.setList(lista);
         } else
         {
            Util.mensagem("Exclusão cancelada");
@@ -162,21 +162,23 @@ public class JDlgVendasNovo extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgVendasNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgJogoNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgVendasNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgJogoNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgVendasNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgJogoNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgVendasNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgJogoNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgVendasNovo dialog = new JDlgVendasNovo(new javax.swing.JFrame(), true);
+                JDlgJogoNovo dialog = new JDlgJogoNovo(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

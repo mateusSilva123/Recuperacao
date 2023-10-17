@@ -4,38 +4,39 @@
  * and open the template in the editor.
  */
 package view;
-import hibernate.MslfUsuarios;
-import dao.UsuariosDAO;
+import bean.MslfVendedor;
+import dao.VendedorDAO;
 import java.util.List;
-import view.JDlgUsuariosNovoIA;
-import view.UsuariosControle;
+import view.IA.JDlgVendedorNovoIA;
+import view.controle.VendedorControle;
 import tools.Util;
 /**
  *
- * @author u13766540670
+ * @author eu
  */
-public class JDlgUsuariosNovo extends javax.swing.JDialog {
+public class JDlgVendedorNovo extends javax.swing.JDialog {
 
     /**
-     * Creates new form JDlgUsuariosNovo
+     * Creates new form koko
      */
    // Declaração de atributo
-    UsuariosDAO usuariosDAO;
-    MslfUsuarios usuarios;
-    UsuariosControle usuariosControle;
-    JDlgUsuariosNovoIA jDlgUsuariosNovoIA;
+    VendedorDAO vendedorDAO;
+    MslfVendedor vendedor;
+    VendedorControle vendedorControle;
+    
+    JDlgVendedorNovoIA jDlgVendedorNovoIA;
    
-    public JDlgUsuariosNovo(java.awt.Frame parent, boolean modal) {
+    public JDlgVendedorNovo(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-        setTitle("Usuarios");
+        setTitle("Vendedor");
         
-        jDlgUsuariosNovoIA = new JDlgUsuariosNovoIA(null, true);
-        usuariosDAO = new UsuariosDAO();
-        List lista = usuariosDAO.listALL();
-        usuariosControle = new UsuariosControle();
-        usuariosControle.setList(lista);
+        jDlgVendedorNovoIA = new JDlgVendedorNovoIA(null, true);
+        vendedorDAO = new VendedorDAO();
+        List lista = vendedorDAO.listALL();
+        vendedorControle = new VendedorControle();
+        vendedorControle.setList(lista);
     }
 
     /**
@@ -117,27 +118,26 @@ public class JDlgUsuariosNovo extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
-        jDlgUsuariosNovoIA.setTitle("Inclusão");
-        jDlgUsuariosNovoIA.setVisible(true);
+        jDlgVendedorNovoIA.setTitle("Inclusão");
+        jDlgVendedorNovoIA.setVisible(true);
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
-        // TODO add your handling code here:
         if( Util.pergunta("Você deseja alterar?")== true){
         this.dispose();
-       jDlgUsuariosNovoIA.setVisible(true);
-       jDlgUsuariosNovoIA.setTitle("Alteração");
+       jDlgVendedorNovoIA.setVisible(true);
+       jDlgVendedorNovoIA.setTitle("Alteração");
         }
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
-        if ((Util.pergunta("Excluir?")) == true) {
+       if ((Util.pergunta("Excluir?")) == true) {
             int sel = jTable1.getSelectedRow();
-            usuarios = usuariosControle.getbean(sel);
-            usuariosDAO.delete(usuarios);
+            vendedor = vendedorControle.getbean(sel);
+            vendedorDAO.delete(vendedor);
             // Altera os registro da jtable
-            List lista = usuariosDAO.listALL();
-            usuariosControle.setList(lista);
+            List lista = vendedorDAO.listALL();
+            vendedorControle.setList(lista);
         } else
         {
            Util.mensagem("Exclusão cancelada");
@@ -162,20 +162,27 @@ public class JDlgUsuariosNovo extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgUsuariosNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgVendedorNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgUsuariosNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgVendedorNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgUsuariosNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgVendedorNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgUsuariosNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgVendedorNovo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgUsuariosNovo dialog = new JDlgUsuariosNovo(new javax.swing.JFrame(), true);
+                JDlgVendedorNovo dialog = new JDlgVendedorNovo(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

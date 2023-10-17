@@ -1,5 +1,5 @@
-package hibernate;
-// Generated 18/09/2023 13:15:55 by Hibernate Tools 4.3.1
+package bean;
+// Generated 16/10/2023 09:17:23 by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -36,6 +36,7 @@ public class MslfVendedor  implements java.io.Serializable {
      private String mslfTelefone;
      private Date mslfDataNasc;
      private String mslfSalario;
+     
 
     public MslfVendedor() {
     }
@@ -54,7 +55,6 @@ public class MslfVendedor  implements java.io.Serializable {
         this.mslfSalario = mslfSalario;
     }
     
-   
      @Id 
 
     
@@ -155,6 +155,21 @@ public class MslfVendedor  implements java.io.Serializable {
     
     public void setMslfSalario(String mslfSalario) {
         this.mslfSalario = mslfSalario;
+    }
+
+    @Override
+    public String toString() {
+    return getMslfNome();
+    }
+    
+    public boolean equals(Object object) {
+        if (object instanceof MslfVendedor) {
+            MslfVendedor vendedor = (MslfVendedor) object;
+            if (this.getMslfIdVendedor()== vendedor.getMslfIdVendedor()) {
+                return true;
+            }
+        }
+        return false;
     }
 
 

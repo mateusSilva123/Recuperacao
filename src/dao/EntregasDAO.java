@@ -5,7 +5,7 @@
  */
 package dao;
 
-import hibernate.MslfEntregas;
+import bean.MslfEntregas;
 import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
@@ -53,7 +53,7 @@ public class EntregasDAO extends DAO_Abstract{
     @Override
     public List listALL() {
         session.beginTransaction();
-        Criteria criteria = session.createCriteria(EntregasDAO.class);
+        Criteria criteria = session.createCriteria(MslfEntregas.class);
         List Lista = criteria.list();
         session.getTransaction().commit();
         return Lista;
