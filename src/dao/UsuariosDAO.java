@@ -5,7 +5,7 @@
  */
 package dao;
 
-import hibernate.MslfUsuarios;
+import bean.MslfUsuarios;
 import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
@@ -15,11 +15,7 @@ import org.hibernate.criterion.Restrictions;
  *
  */
 public class UsuariosDAO extends DAO_Abstract{
-public  UsuariosDAO(){
 
-
-
-}
 
 @Override
     public void insert(Object object) {
@@ -59,25 +55,14 @@ public  UsuariosDAO(){
     @Override
     public List listALL() {
         session.beginTransaction();
-        Criteria criteria = session.createCriteria(UsuariosDAO.class);
+        Criteria criteria = session.createCriteria(MslfUsuarios.class);
         List Lista = criteria.list();
         session.getTransaction().commit();
         return Lista;
     }
     
     public static void main(String[] args) {
-        MslfUsuarios usuarios = new MslfUsuarios();
-        usuarios.setMslfIdUsuarios(88);
-        usuarios.setMslfNome("Bakarakas");
-        usuarios.setMslfApelido("bks");
-        usuarios.setMslfCpf("345");
-        usuarios.setMslfNivel(2);
-        usuarios.setMslfAtivo("s");
-        usuarios.setMslfSenha("1qs453");
-        
-        UsuariosDAO usuariosDAO = new UsuariosDAO();
-       usuariosDAO.insert(usuarios);
-        System.out.println(usuarios);
+       
     }
     
 }
