@@ -5,7 +5,7 @@
  */
 package dao;
 
-import hibernate.MslfVendas;
+import bean.MslfVendas;
 import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;

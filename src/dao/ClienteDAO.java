@@ -5,7 +5,7 @@
  */
 package dao;
 
-import hibernate.MslfCliente;
+import bean.MslfCliente;
 import java.util.ArrayList;
 import java.util.List;
 import org.hibernate.Criteria;

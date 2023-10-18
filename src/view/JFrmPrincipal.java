@@ -16,7 +16,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
      */
     public JFrmPrincipal() {
         initComponents();
-        setTitle("Jogos");
+        setTitle("Sistema de Jogos");
         setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -170,7 +170,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMniVendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMniVendasActionPerformed
         // TODO add your handling code here:
-        JDlgVendasNovo jDlgVendass = new JDlgVendasNovo(this, true);
+        JDlgVendas jDlgVendass = new JDlgVendas(this, true);
         jDlgVendass.setVisible(true);
     }//GEN-LAST:event_jMniVendasActionPerformed
 
@@ -185,14 +185,14 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMniLivroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMniLivroActionPerformed
         // TODO add your handling code here:
-        JDlgJogo jDlgJogo = new JDlgJogo(this, true);
-        jDlgJogo.setVisible(true);
+        JDlgJogoNovo jDlgJogoNovos = new JDlgJogoNovo(this, true);
+        jDlgJogoNovos.setVisible(true);
     }//GEN-LAST:event_jMniLivroActionPerformed
 
     private void jMniVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMniVendedorActionPerformed
         // TODO add your handling code here:
-        JDlgVendedor jDlgVendedors = new JDlgVendedor(this, true);
-        jDlgVendedors.setVisible(true);
+        JDlgVendedorNovo jDlgVendedorNovos = new JDlgVendedorNovo(this, true);
+        jDlgVendedorNovos.setVisible(true);
     }//GEN-LAST:event_jMniVendedorActionPerformed
 
     private void jMniClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMniClienteActionPerformed
@@ -203,7 +203,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMniUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMniUsuarioActionPerformed
         // TODO add your handling code here:
-        JDlgUsuariosNovo jDlgUsuarios = new JDlgUsuariosNovo(this, true);
+        JDlgUsuarios jDlgUsuarios = new JDlgUsuarios(this, true);
         jDlgUsuarios.setVisible(true);
     }//GEN-LAST:event_jMniUsuarioActionPerformed
 

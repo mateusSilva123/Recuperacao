@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package view;
-import hibernate.MslfUsuarios;
+import bean.MslfUsuarios;
 import dao.UsuariosDAO;
 import javax.swing.JOptionPane;
 
