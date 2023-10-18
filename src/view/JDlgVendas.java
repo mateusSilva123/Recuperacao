@@ -364,25 +364,52 @@ k     */
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         Util.habilitar(true, jTxtCodigo, jTxtObservacao, jTxtQuantidade, jTxtTotal,
                 jCboCliente, jCboVendedor, jFmtData, jBtnCancelar, jBtnConfirmar);
         
         Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
         
         Util.limparCampos(jTxtCodigo, jTxtObservacao, jTxtQuantidade, jTxtTotal,
+<<<<<<< HEAD
+=======
+=======
+        Util.habilitar(true, jTxtCodigo, jTxtTotal, jTxtObservacao, jTxtQuantidade, jCboCliente, 
+                 jCboVendedor, jFmtData, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+        Util.limparCampos(jTxtCodigo, jTxtTotal, jTxtObservacao, jTxtQuantidade, 
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
                 jCboCliente, jCboVendedor, jFmtData);
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
        Util.habilitar(true, jTxtCodigo, jTxtObservacao, jTxtQuantidade, jTxtTotal,
                 jCboCliente, jCboVendedor, jFmtData, jBtnCancelar, jBtnConfirmar);
         
         Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+<<<<<<< HEAD
+=======
+=======
+        Util.habilitar(true, jTxtCodigo, jTxtTotal, jTxtObservacao, jTxtQuantidade, jCboCliente, 
+                 jCboVendedor, jFmtData, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         Util.habilitar(false, jTxtCodigo, jTxtObservacao, jTxtQuantidade, jTxtTotal,
                 jCboCliente, jCboVendedor, jFmtData, jBtnCancelar, jBtnConfirmar);
              
@@ -391,6 +418,15 @@ k     */
           Util.limparCampos(jTxtCodigo, jTxtObservacao, jTxtQuantidade, jTxtTotal,
                 jCboCliente, jCboVendedor, jFmtData);
                                     
+<<<<<<< HEAD
+=======
+=======
+        Util.habilitar(true, jTxtCodigo, jTxtTotal, jTxtObservacao, jTxtQuantidade, jCboCliente, 
+                 jCboVendedor, jFmtData, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+        Util.limparCampos(jTxtCodigo, jTxtTotal, jTxtObservacao, jTxtQuantidade, 
+                jCboCliente, jCboVendedor, jFmtData);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed

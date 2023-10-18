@@ -61,7 +61,11 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
         MslfVendedor vendedor = new MslfVendedor(); // criou o bean
         vendedor.setMslfIdVendedor(Util.strInt(jTxtID.getText()));
         vendedor.setMslfCpf(jFmtCpf.getText());
+<<<<<<< HEAD
         vendedor.setMslfDataNasc(Util.strDate(jFmtData.getText()));
+=======
+        vendedor.setMslfDataNasc(Util.strDate(jFmtCpf.getText()));
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         vendedor.setMslfEmail(jTxtEmail.getText());
         vendedor.setMslfNome(jTxtNome.getText());
         vendedor.setMslfRg(jTxtRG.getText());

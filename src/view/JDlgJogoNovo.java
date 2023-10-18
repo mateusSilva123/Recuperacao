@@ -37,7 +37,10 @@ public class JDlgJogoNovo extends javax.swing.JDialog {
         List lista = jogoDAO.listALL();
         jogoControle = new JogoControle();
         jogoControle.setList(lista);
+<<<<<<< HEAD
         jTable1.setModel(jogoControle);
+=======
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
     }
 
     /**

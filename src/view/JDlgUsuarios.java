@@ -39,7 +39,15 @@ public class JDlgUsuarios extends javax.swing.JDialog {
         Util.habilitar(false, jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
                 jFmtCpf, jFmtData, jPwfSenha,jBtnCancelar, jBtnConfirmar);
         
+<<<<<<< HEAD
         Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+        Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+        Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         
         try {
             mascaraCpf = new MaskFormatter("###.###.###-##");
@@ -94,7 +102,15 @@ public class JDlgUsuarios extends javax.swing.JDialog {
         jBtnPesquisar = new javax.swing.JButton();
         jBtnIncluir = new javax.swing.JButton();
         jBtnAlterar = new javax.swing.JButton();
+<<<<<<< HEAD
         jBtnExcluir = new javax.swing.JButton();
+=======
+<<<<<<< HEAD
+        jBtnExcluir = new javax.swing.JButton();
+=======
+        jBtnExlcuir = new javax.swing.JButton();
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         jBtnConfirmar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jFmtData = new javax.swing.JFormattedTextField();
@@ -146,11 +162,25 @@ public class JDlgUsuarios extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir");
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnExcluirActionPerformed(evt);
+<<<<<<< HEAD
+=======
+=======
+        jBtnExlcuir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/excluir.png"))); // NOI18N
+        jBtnExlcuir.setText("Excluir");
+        jBtnExlcuir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnExlcuirActionPerformed(evt);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
             }
         });
 
@@ -232,7 +262,15 @@ public class JDlgUsuarios extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jBtnAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(24, 24, 24)
+<<<<<<< HEAD
                                 .addComponent(jBtnExcluir)
+=======
+<<<<<<< HEAD
+                                .addComponent(jBtnExcluir)
+=======
+                                .addComponent(jBtnExlcuir)
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
                                 .addGap(14, 14, 14)
                                 .addComponent(jBtnConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -302,7 +340,15 @@ public class JDlgUsuarios extends javax.swing.JDialog {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jBtnIncluir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jBtnAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                         .addComponent(jBtnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+<<<<<<< HEAD
+                        .addComponent(jBtnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+                        .addComponent(jBtnExlcuir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
                         .addComponent(jBtnConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(19, 19, 19))
         );
@@ -315,7 +361,15 @@ public class JDlgUsuarios extends javax.swing.JDialog {
       Util.habilitar(false, jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
                 jFmtCpf, jFmtData, jPwfSenha, jBtnCancelar, jBtnConfirmar);
       
+<<<<<<< HEAD
       Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+      Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+      Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
       
         Util.limparCampos(jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
                 jFmtCpf, jFmtData, jPwfSenha);
@@ -334,7 +388,15 @@ public class JDlgUsuarios extends javax.swing.JDialog {
         Util.habilitar(true, jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
                 jFmtCpf, jFmtData, jPwfSenha, jBtnCancelar, jBtnConfirmar);
         
+<<<<<<< HEAD
         Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+        Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+        Util.habilitar(false, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         
         Util.limparCampos(jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
                 jFmtCpf, jFmtData, jPwfSenha);
@@ -346,12 +408,28 @@ public class JDlgUsuarios extends javax.swing.JDialog {
         Util.habilitar(true, jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
                 jFmtCpf, jFmtData, jPwfSenha, jBtnCancelar, jBtnConfirmar);
         
+<<<<<<< HEAD
         Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+        Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+        Util.habilitar(false, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         
         incluindo = false;
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
+<<<<<<< HEAD
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+=======
+<<<<<<< HEAD
+    private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+=======
+    private void jBtnExlcuirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExlcuirActionPerformed
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
         // TODO add your handling code here:
         if ((Util.pergunta("Deseja excluir o registro?") == true)){
             MslfUsuarios usuarios = viewBean();
@@ -363,6 +441,10 @@ public class JDlgUsuarios extends javax.swing.JDialog {
         }      
         Util.limparCampos(jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
                 jFmtCpf, jFmtData, jPwfSenha);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
@@ -383,6 +465,34 @@ public class JDlgUsuarios extends javax.swing.JDialog {
          
          Util.limparCampos(jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
                 jFmtCpf, jFmtData, jPwfSenha);
+<<<<<<< HEAD
+=======
+=======
+    }//GEN-LAST:event_jBtnExlcuirActionPerformed
+
+    private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+       if (incluindo == true) {
+              MslfUsuarios usuarios = viewBean();  
+        UsuariosDAO usuariosDAO = new UsuariosDAO();
+        usuariosDAO.insert(usuarios);
+             Util.habilitar(false, jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
+                jFmtCpf, jFmtData, jPwfSenha, jBtnCancelar, jBtnConfirmar);
+             
+             Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+        }else{
+            MslfUsuarios usuarios = viewBean();  
+        UsuariosDAO usuariosDAO = new UsuariosDAO();
+        usuariosDAO.update(usuarios);
+         Util.habilitar(true, jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
+                jFmtCpf, jFmtData, jPwfSenha, jBtnCancelar, jBtnConfirmar);
+         
+         Util.habilitar(false, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+         
+         Util.limparCampos(jTxtApelido, jTxtCodigo, jTxtNome, jChbAtivo, jCboNivel, 
+                jFmtCpf, jFmtData, jPwfSenha);
+       }
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 
     private void jPwfSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPwfSenhaActionPerformed
@@ -461,7 +571,15 @@ public class JDlgUsuarios extends javax.swing.JDialog {
     private javax.swing.JButton jBtnAlterar;
     private javax.swing.JButton jBtnCancelar;
     private javax.swing.JButton jBtnConfirmar;
+<<<<<<< HEAD
     private javax.swing.JButton jBtnExcluir;
+=======
+<<<<<<< HEAD
+    private javax.swing.JButton jBtnExcluir;
+=======
+    private javax.swing.JButton jBtnExlcuir;
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
     private javax.swing.JButton jBtnIncluir;
     private javax.swing.JButton jBtnPesquisar;
     private javax.swing.JComboBox<String> jCboNivel;

@@ -37,7 +37,10 @@ public class JDlgVendedorNovo extends javax.swing.JDialog {
         List lista = vendedorDAO.listALL();
         vendedorControle = new VendedorControle();
         vendedorControle.setList(lista);
+<<<<<<< HEAD
         jTable1.setModel(vendedorControle);
+=======
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
     }
 
     /**
