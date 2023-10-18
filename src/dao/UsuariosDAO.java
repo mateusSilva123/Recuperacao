@@ -62,7 +62,22 @@ public class UsuariosDAO extends DAO_Abstract{
     }
     
     public static void main(String[] args) {
+<<<<<<< HEAD
        
+=======
+        MslfUsuarios usuarios = new MslfUsuarios();
+        usuarios.setMslfIdUsuarios(88);
+        usuarios.setMslfNome("nomer");
+        usuarios.setMslfApelido("nome");
+        usuarios.setMslfCpf("123");
+        usuarios.setMslfNivel(1);
+        usuarios.setMslfAtivo("s");
+        usuarios.setMslfSenha("senha");
+        
+        UsuariosDAO usuariosDAO = new UsuariosDAO();
+       usuariosDAO.insert(usuarios);
+        System.out.println(usuarios);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
     }
     
 }

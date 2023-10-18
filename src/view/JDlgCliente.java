@@ -52,7 +52,11 @@ public class JDlgCliente extends javax.swing.JDialog {
                 jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
                 jFmtTelefone, jCboSexo, jCboUsuarios, jBtnCancelar, jBtnConfirmar);
         
+<<<<<<< HEAD
         Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+        Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
         
         try {
             mascaraCpf = new MaskFormatter("###.###.###-##");
@@ -468,7 +472,11 @@ public class JDlgCliente extends javax.swing.JDialog {
                 jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
                 jFmtTelefone, jCboSexo, jCboUsuarios, jBtnCancelar, jBtnConfirmar);
        
+<<<<<<< HEAD
        Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+       Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
        
         Util.limparCampos(jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
                 jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
@@ -489,7 +497,11 @@ public class JDlgCliente extends javax.swing.JDialog {
                 jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
                 jFmtTelefone, jCboSexo, jCboUsuarios, jBtnCancelar, jBtnConfirmar);
         
+<<<<<<< HEAD
         Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+        Util.habilitar(false, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
         
         Util.limparCampos(jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
                 jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
@@ -503,7 +515,11 @@ public class JDlgCliente extends javax.swing.JDialog {
                 jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
                 jFmtTelefone, jCboSexo, jCboUsuarios, jBtnCancelar, jBtnConfirmar);
          
+<<<<<<< HEAD
          Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+         Util.habilitar(false, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
          
         incluindo = false;
     }//GEN-LAST:event_jBtnAlterarActionPerformed
@@ -524,6 +540,7 @@ public class JDlgCliente extends javax.swing.JDialog {
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
         if (incluindo == true) {
+<<<<<<< HEAD
             MslfCliente cliente = viewBean();  
             ClienteDAO clienteDAO = new ClienteDAO();
             clienteDAO.insert(cliente);
@@ -531,13 +548,26 @@ public class JDlgCliente extends javax.swing.JDialog {
             MslfCliente cliente = viewBean();  
             ClienteDAO clienteDAO = new ClienteDAO();
             clienteDAO.update(cliente);
+=======
+              MslfCliente cliente = viewBean();  
+        ClienteDAO clienteDAO = new ClienteDAO();
+        clienteDAO.insert(cliente);
+        }else{
+            MslfCliente cliente = viewBean();  
+        ClienteDAO clienteDAO = new ClienteDAO();
+        clienteDAO.update(cliente);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
         }
         
          Util.habilitar(false, jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
                 jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,
                 jFmtTelefone, jCboSexo, jCboUsuarios, jBtnCancelar, jBtnConfirmar);
              
+<<<<<<< HEAD
          Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+         Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
          
          Util.limparCampos(jTxtApelido, jTxtBairro, jTxtCidade, jTxtEmail, jTxtEndereco,
                 jTxtEstado, jTxtID, jTxtNome, jTxtRG, jPwfSenha, jFmtCPF, jFmtCep, jFmtData,

@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class VendasControle extends AbstractTableModel {
 private List lista;
+<<<<<<< HEAD
     
     public void setList(List lista) {
         this.lista = lista;
@@ -22,6 +23,19 @@ private List lista;
         return (MslfVendas) lista.get(linha);
     }
     
+=======
+
+public void setList(List lista){
+this.lista=lista;
+}
+public  void setlist(List lista){
+this.lista = lista;
+}
+
+public MslfVendas getbean(int linha){
+return (MslfVendas) lista.get(linha);
+}
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
     @Override
     public int getRowCount() {
         return lista.size();
@@ -29,7 +43,11 @@ private List lista;
 
     @Override
     public int getColumnCount() {
+<<<<<<< HEAD
         return 4;
+=======
+      return 4;
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
     }
 
     @Override
@@ -48,7 +66,11 @@ private List lista;
              return vendas.getMslfValorTotal();
         
         }
+<<<<<<< HEAD
        return "";
+=======
+       return null;
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
     }
     @Override
     public String getColumnName(int columnIndex){
