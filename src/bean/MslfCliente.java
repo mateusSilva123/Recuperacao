@@ -35,19 +35,18 @@ public class MslfCliente  implements java.io.Serializable {
      private String mslfRg;
      private String mslfSexo;
      private String mslfTelefone;
-     private String mslfSenha;
+     private Date mslfSenha;
      private String mslfCep;
      private String mslfEndereco;
      private String mslfBairro;
      private String mslfCidade;
      private String mslfEstado;
-     private Date mslfDataNasc;
 
     public MslfCliente() {
     }
 
 	
-    public MslfCliente(int mslfIdCliente, MslfUsuarios mslfUsuarios, String mslfNome, String mslfEmail, String mslfCpf, String mslfRg, String mslfSexo, String mslfTelefone, String mslfSenha, String mslfCep, String mslfEndereco, String mslfBairro, String mslfCidade, String mslfEstado, Date mslfDataNasc) {
+    public MslfCliente(int mslfIdCliente, MslfUsuarios mslfUsuarios, String mslfNome, String mslfEmail, String mslfCpf, String mslfRg, String mslfSexo, String mslfTelefone, Date mslfSenha, String mslfCep, String mslfEndereco, String mslfBairro, String mslfCidade, String mslfEstado) {
         this.mslfIdCliente = mslfIdCliente;
         this.mslfUsuarios = mslfUsuarios;
         this.mslfNome = mslfNome;
@@ -62,9 +61,8 @@ public class MslfCliente  implements java.io.Serializable {
         this.mslfBairro = mslfBairro;
         this.mslfCidade = mslfCidade;
         this.mslfEstado = mslfEstado;
-        this.mslfDataNasc = mslfDataNasc;
     }
-    public MslfCliente(int mslfIdCliente, MslfUsuarios mslfUsuarios, String mslfNome, String mslfApelido, String mslfEmail, String mslfCpf, String mslfRg, String mslfSexo, String mslfTelefone, String mslfSenha, String mslfCep, String mslfEndereco, String mslfBairro, String mslfCidade, String mslfEstado, Date mslfDataNasc) {
+    public MslfCliente(int mslfIdCliente, MslfUsuarios mslfUsuarios, String mslfNome, String mslfApelido, String mslfEmail, String mslfCpf, String mslfRg, String mslfSexo, String mslfTelefone, Date mslfSenha, String mslfCep, String mslfEndereco, String mslfBairro, String mslfCidade, String mslfEstado) {
        this.mslfIdCliente = mslfIdCliente;
        this.mslfUsuarios = mslfUsuarios;
        this.mslfNome = mslfNome;
@@ -80,7 +78,6 @@ public class MslfCliente  implements java.io.Serializable {
        this.mslfBairro = mslfBairro;
        this.mslfCidade = mslfCidade;
        this.mslfEstado = mslfEstado;
-       this.mslfDataNasc = mslfDataNasc;
     }
    
      @Id 
@@ -175,13 +172,19 @@ public class MslfCliente  implements java.io.Serializable {
         this.mslfTelefone = mslfTelefone;
     }
 
+<<<<<<<< HEAD:src/bean/MslfCliente.java
     
     @Column(name="MSLF_senha", nullable=false, length=45)
     public String getMslfSenha() {
+========
+    @Temporal(TemporalType.DATE)
+    @Column(name="MSLF_senha", nullable=false, length=10)
+    public Date getMslfSenha() {
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/hibernate/MslfCliente.java
         return this.mslfSenha;
     }
     
-    public void setMslfSenha(String mslfSenha) {
+    public void setMslfSenha(Date mslfSenha) {
         this.mslfSenha = mslfSenha;
     }
 
@@ -235,15 +238,7 @@ public class MslfCliente  implements java.io.Serializable {
         this.mslfEstado = mslfEstado;
     }
 
-    @Temporal(TemporalType.DATE)
-    @Column(name="MSLF_dataNasc", nullable=false, length=10)
-    public Date getMslfDataNasc() {
-        return this.mslfDataNasc;
-    }
-    
-    public void setMslfDataNasc(Date mslfDataNasc) {
-        this.mslfDataNasc = mslfDataNasc;
-    }
+
 
     @Override
     public String toString() {

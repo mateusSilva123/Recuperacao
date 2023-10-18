@@ -7,10 +7,17 @@ package view;
 
 import bean.MslfEntregas;
 import dao.EntregasDAO;
+<<<<<<< HEAD
 import bean.MslfVendedor;
 import dao.ClienteDAO;
 import dao.VendedorDAO;
 import bean.MslfCliente;
+=======
+import bean.MslfCliente;
+import bean.MslfVendedor;
+import dao.ClienteDAO;
+import dao.VendedorDAO;
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
 import java.util.List;
@@ -41,8 +48,12 @@ public class JDlgEntregas extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         setTitle("Entregas");
+<<<<<<< HEAD
         
         ClienteDAO clienteDAO = new ClienteDAO();
+=======
+         ClienteDAO clienteDAO = new ClienteDAO();
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         List listaCliente = clienteDAO.listALL();
         for (int i = 0; i < listaCliente.size(); i++) {
             jCboCliente.addItem((MslfCliente) listaCliente.get(i));            
@@ -59,7 +70,19 @@ public class JDlgEntregas extends javax.swing.JDialog {
                 jTxtRG, jFmtCPF, jFmtCep, jFmtData, jFmtTelefone, jCboCliente, 
                 jCboVendedor, jBtnCancelar, jBtnConfirmar);
         
+<<<<<<< HEAD
         Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+        Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+        Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+        Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         
         try {
             mascaraCpf = new MaskFormatter("###.###.###-##");
@@ -435,7 +458,19 @@ public class JDlgEntregas extends javax.swing.JDialog {
                 jTxtRG, jFmtCPF, jFmtCep, jFmtData, jFmtTelefone, jCboCliente, 
                 jCboVendedor, jBtnCancelar, jBtnConfirmar);
       
+<<<<<<< HEAD
       Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+      Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+      Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+      Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
       
         Util.limparCampos(jTxtBairro, jTxtCidade, jTxtEndereco, jTxtEstado, jTxtID, jTxtNumCasa,
                 jTxtRG, jFmtCPF, jFmtCep, jFmtData, jFmtTelefone, jCboCliente, 
@@ -456,7 +491,19 @@ public class JDlgEntregas extends javax.swing.JDialog {
                 jTxtRG, jFmtCPF, jFmtCep, jFmtData, jFmtTelefone, jCboCliente, 
                 jCboVendedor, jBtnCancelar, jBtnConfirmar);
         
+<<<<<<< HEAD
         Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+        Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+        Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+        Util.habilitar(false, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         
         Util.limparCampos(jTxtBairro, jTxtCidade, jTxtEndereco, jTxtEstado, jTxtID, jTxtNumCasa,
                 jTxtRG, jFmtCPF, jFmtCep, jFmtData, jFmtTelefone, jCboCliente, 
@@ -470,7 +517,19 @@ public class JDlgEntregas extends javax.swing.JDialog {
                 jTxtRG, jFmtCPF, jFmtCep, jFmtData, jFmtTelefone, jCboCliente, 
                 jCboVendedor, jBtnCancelar, jBtnConfirmar);
          
+<<<<<<< HEAD
          Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+         Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+         Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+         Util.habilitar(false, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
          
         incluindo = false;
     }//GEN-LAST:event_jBtnAlterarActionPerformed
@@ -505,7 +564,19 @@ public class JDlgEntregas extends javax.swing.JDialog {
                 jTxtRG, jFmtCPF, jFmtCep, jFmtData, jFmtTelefone, jCboCliente, 
                 jCboVendedor, jBtnCancelar, jBtnConfirmar);
          
+<<<<<<< HEAD
          Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+         Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+<<<<<<< HEAD
+         Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
+=======
+         Util.habilitar(true, jBtnAlterar, jBtnExlcuir, jBtnIncluir, jBtnPesquisar);
+>>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
          
          Util.limparCampos(jTxtBairro, jTxtCidade, jTxtEndereco, jTxtEstado, jTxtID, jTxtNumCasa,
                 jTxtRG, jFmtCPF, jFmtCep, jFmtData, jFmtTelefone, jCboCliente, 

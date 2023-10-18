@@ -7,8 +7,18 @@ package view;
 import bean.MslfVendedor;
 import dao.VendedorDAO;
 import java.util.List;
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/view/JDlgVendedorNovo.java
 import view.IA.JDlgVendedorNovoIA;
 import view.controle.VendedorControle;
+========
+import view.JDlgUsuariosNovoIA;
+import view.UsuariosController;
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgUsuariosNovo.java
+=======
+import view.IA.JDlgVendedorNovoIA;
+import view.controle.VendedorControle;
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
 import tools.Util;
 /**
  *
@@ -20,15 +30,33 @@ public class JDlgVendedorNovo extends javax.swing.JDialog {
      * Creates new form koko
      */
    // Declaração de atributo
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/view/JDlgVendedorNovo.java
+=======
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     VendedorDAO vendedorDAO;
     MslfVendedor vendedor;
     VendedorControle vendedorControle;
     
     JDlgVendedorNovoIA jDlgVendedorNovoIA;
+<<<<<<< HEAD
+========
+    UsuariosDAO usuariosDAO;
+    MslfUsuarios usuarios;
+    UsuariosController usuariosController;
+    
+    JDlgUsuariosNovoIA jDlgUsuariosNovoIA;
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgUsuariosNovo.java
+=======
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
    
     public JDlgVendedorNovo(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/view/JDlgVendedorNovo.java
+=======
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         setLocationRelativeTo(null);
         setTitle("Vendedor");
         
@@ -37,7 +65,23 @@ public class JDlgVendedorNovo extends javax.swing.JDialog {
         List lista = vendedorDAO.listALL();
         vendedorControle = new VendedorControle();
         vendedorControle.setList(lista);
+<<<<<<< HEAD
         jTable1.setModel(vendedorControle);
+========
+        setTitle("Usuarios");
+        
+        jDlgUsuariosNovoIA = new JDlgUsuariosNovoIA(null, true);
+        usuariosDAO = new UsuariosDAO();
+        List lista = usuariosDAO.listALL();
+        usuariosController = new UsuariosController();
+        usuariosController.setList(lista);
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgUsuariosNovo.java
+=======
+<<<<<<< HEAD
+        jTable1.setModel(vendedorControle);
+=======
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     }
 
     /**
@@ -73,7 +117,10 @@ public class JDlgVendedorNovo extends javax.swing.JDialog {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+<<<<<<< HEAD
+=======
         jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/incluir.png"))); // NOI18N
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         jBtnIncluir.setText("Incluir");
         jBtnIncluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,7 +129,10 @@ public class JDlgVendedorNovo extends javax.swing.JDialog {
         });
         jPanel1.add(jBtnIncluir);
 
+<<<<<<< HEAD
+=======
         jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/alterar.png"))); // NOI18N
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         jBtnAlterar.setText("Alterar");
         jBtnAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +141,10 @@ public class JDlgVendedorNovo extends javax.swing.JDialog {
         });
         jPanel1.add(jBtnAlterar);
 
+<<<<<<< HEAD
+=======
         jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/excluir.png"))); // NOI18N
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         jBtnExcluir.setText("Excluir");
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +177,10 @@ public class JDlgVendedorNovo extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/view/JDlgVendedorNovo.java
+=======
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         if( Util.pergunta("Você deseja alterar?")== true){
         this.dispose();
        jDlgVendedorNovoIA.setVisible(true);
@@ -139,9 +196,32 @@ public class JDlgVendedorNovo extends javax.swing.JDialog {
             // Altera os registro da jtable
             List lista = vendedorDAO.listALL();
             vendedorControle.setList(lista);
+<<<<<<< HEAD
+========
+        // TODO add your handling code here:
+        jDlgUsuariosNovoIA.setTitle("Alteração");
+        jDlgUsuariosNovoIA.setVisible(true);
+    }//GEN-LAST:event_jBtnAlterarActionPerformed
+
+    private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+        // TODO add your handling code here:
+        //Util.perguntar("deseja escluir?");
+        if ((Util.pergunta("excluir?")) == true) {
+            int sel = jTable1.getSelectedRow();
+            usuarios = usuariosController.getBean(sel);
+            usuariosDAO.delete(usuarios);
+            // Altera os registro da jtable
+            List lista = usuariosDAO.listALL();
+            usuariosController.setList(lista);
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgUsuariosNovo.java
+        } else
+        {
+           // Util.mensagem("Exclusão cancelada");
+=======
         } else
         {
            Util.mensagem("Exclusão cancelada");
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         
         }
     }//GEN-LAST:event_jBtnExcluirActionPerformed

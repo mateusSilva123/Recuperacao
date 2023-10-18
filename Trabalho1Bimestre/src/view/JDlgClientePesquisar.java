@@ -3,11 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package view.pesquisar;
 
+<<<<<<<< HEAD:Trabalho1Bimestre/src/view/JDlgClientePesquisar.java
 import hibernate.MslfCliente;
 import dao.ClienteDAO;
+========
+import view.controle.JogoControle;
+import hibernate.MslfJogo;
+import dao.JogoDAO;
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:src/view/pesquisar/JDlgJogoPesquisar.java
 import java.util.List;
+import view.JDlgJogo;
 
 /**
  *

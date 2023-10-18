@@ -5,16 +5,23 @@
  */
 package view.pesquisar;
 
+<<<<<<< HEAD
 <<<<<<<< HEAD:src/view/pesquisar/JDlgUsuariosPesquisar.java
 import view.controle.UsuariosControle;
 import bean.MslfUsuarios;
 import dao.UsuariosDAO;
 import java.util.List;
 import view.JDlgUsuarios;
+=======
+<<<<<<<< HEAD:Trabalho1Bimestre/src/view/JDlgClientePesquisar.java
+import hibernate.MslfCliente;
+import dao.ClienteDAO;
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
 ========
 import view.controle.JogoControle;
 import hibernate.MslfJogo;
 import dao.JogoDAO;
+<<<<<<< HEAD
 import java.util.List;
 import view.JDlgJogo;
 >>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:src/view/pesquisar/JDlgJogoPesquisar.java
@@ -44,6 +51,37 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
     
     public void setTelaAnterior(JDlgUsuarios jDlgUsuarios) {
         this.jDlgUsuarios = jDlgUsuarios;
+=======
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:src/view/pesquisar/JDlgJogoPesquisar.java
+import java.util.List;
+import view.JDlgJogo;
+
+/**
+ *
+ * @author Marcos
+ */
+public class JDlgClientePesquisar extends javax.swing.JDialog {
+
+    private JDlgCliente jDlgCliente;
+    ClienteControle clienteControle;
+    /**
+     * Creates new form JDlgClientePesquisar
+     */
+    public JDlgClientePesquisar(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
+        initComponents();
+        setLocationRelativeTo(null);
+        setTitle("Consulta de Cliente");
+        clienteControle = new ClienteControle();
+        ClienteDAO clienteDAO = new ClienteDAO();
+        List lista = clienteDAO.listALL();
+        clienteControle.setList(lista);
+        jTable1.setModel(clienteControle);                
+    }
+    
+    public void setTelaAnterior(JDlgCliente jDlgCliente) {
+        this.jDlgCliente = jDlgCliente;
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     }
 
     /**
@@ -57,8 +95,13 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+<<<<<<< HEAD
         jBtnOk = new javax.swing.JButton();
         jBtnCancelar = new javax.swing.JButton();
+=======
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -75,6 +118,7 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+<<<<<<< HEAD
         jBtnOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Confirmado.png"))); // NOI18N
         jBtnOk.setText("OK");
         jBtnOk.addActionListener(new java.awt.event.ActionListener() {
@@ -88,6 +132,21 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
         jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnCancelarActionPerformed(evt);
+=======
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Confirmado.png"))); // NOI18N
+        jButton1.setText("OK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar.png"))); // NOI18N
+        jButton2.setText("Cancelar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
             }
         });
 
@@ -98,9 +157,15 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 779, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< HEAD
                 .addComponent(jBtnOk)
                 .addGap(18, 18, 18)
                 .addComponent(jBtnCancelar)
+=======
+                .addComponent(jButton1)
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                 .addGap(28, 28, 28))
         );
         layout.setVerticalGroup(
@@ -109,14 +174,20 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+<<<<<<< HEAD
                     .addComponent(jBtnOk)
                     .addComponent(jBtnCancelar))
+=======
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                 .addGap(0, 11, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
     private void jBtnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOkActionPerformed
         // TODO add your handling code here:
         int rowSel = jTable1.getSelectedRow();
@@ -129,6 +200,19 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
         // TODO add your handling code here:
         setVisible(false);
     }//GEN-LAST:event_jBtnCancelarActionPerformed
+=======
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        int rowSel = jTable1.getSelectedRow();
+        MslfCliente cliente = clienteControle.getbean(rowSel);
+        //jDlgCliente.beanView(cliente);
+        setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
 
     /**
      * @param args the command line arguments
@@ -147,6 +231,7 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
+<<<<<<< HEAD
             java.util.logging.Logger.getLogger(JDlgUsuariosPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
             java.util.logging.Logger.getLogger(JDlgUsuariosPesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
@@ -159,11 +244,27 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
+=======
+            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(JDlgClientePesquisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+<<<<<<< HEAD
                 JDlgUsuariosPesquisar dialog = new JDlgUsuariosPesquisar(new javax.swing.JFrame(), true);
+=======
+                JDlgClientePesquisar dialog = new JDlgClientePesquisar(new javax.swing.JFrame(), true);
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -176,8 +277,13 @@ public class JDlgUsuariosPesquisar extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JButton jBtnCancelar;
     private javax.swing.JButton jBtnOk;
+=======
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables

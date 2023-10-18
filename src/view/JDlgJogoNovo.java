@@ -7,8 +7,18 @@ package view;
 import bean.MslfJogo;
 import dao.JogoDAO;
 import java.util.List;
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/view/JDlgJogoNovo.java
 import view.IA.JDlgJogoNovoIA;
 import view.controle.JogoControle;
+========
+import view.JDlgUsuariosNovoIA;
+import view.VendasController;
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendasNovo.java
+=======
+import view.IA.JDlgJogoNovoIA;
+import view.controle.JogoControle;
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
 import tools.Util;
 /**
  *
@@ -20,15 +30,31 @@ public class JDlgJogoNovo extends javax.swing.JDialog {
      * Creates new form koko
      */
    // Declaração de atributo
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/view/JDlgJogoNovo.java
     JogoDAO jogoDAO;
     MslfJogo jogo;
     JogoControle jogoControle;
+========
+    VendasDAO vendasDAO;
+    MslfVendas vendas;
+    VendasController vendasController;
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendasNovo.java
+=======
+    JogoDAO jogoDAO;
+    MslfJogo jogo;
+    JogoControle jogoControle;
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     
     JDlgJogoNovoIA jDlgJogoNovoIA;
    
     public JDlgJogoNovo(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/view/JDlgJogoNovo.java
+=======
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         setLocationRelativeTo(null);
         setTitle("Jogo");
         
@@ -37,7 +63,23 @@ public class JDlgJogoNovo extends javax.swing.JDialog {
         List lista = jogoDAO.listALL();
         jogoControle = new JogoControle();
         jogoControle.setList(lista);
+<<<<<<< HEAD
         jTable1.setModel(jogoControle);
+========
+        setTitle("Vendas");
+        
+        jDlgVendasNovoIA = new JDlgVendasNovoIA(null, true);
+        vendasDAO = new VendasDAO();
+        List lista = vendasDAO.listALL();
+        vendasController = new VendasController();
+        vendasController.setList(lista);
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendasNovo.java
+=======
+<<<<<<< HEAD
+        jTable1.setModel(jogoControle);
+=======
+>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     }
 
     /**
@@ -73,7 +115,10 @@ public class JDlgJogoNovo extends javax.swing.JDialog {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+<<<<<<< HEAD
+=======
         jBtnIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/incluir.png"))); // NOI18N
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         jBtnIncluir.setText("Incluir");
         jBtnIncluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,7 +127,10 @@ public class JDlgJogoNovo extends javax.swing.JDialog {
         });
         jPanel1.add(jBtnIncluir);
 
+<<<<<<< HEAD
+=======
         jBtnAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/alterar.png"))); // NOI18N
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         jBtnAlterar.setText("Alterar");
         jBtnAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +139,10 @@ public class JDlgJogoNovo extends javax.swing.JDialog {
         });
         jPanel1.add(jBtnAlterar);
 
+<<<<<<< HEAD
+=======
         jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/excluir.png"))); // NOI18N
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         jBtnExcluir.setText("Excluir");
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,24 +175,57 @@ public class JDlgJogoNovo extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/view/JDlgJogoNovo.java
+=======
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         if( Util.pergunta("Você deseja alterar?")== true){
         this.dispose();
        jDlgJogoNovoIA.setVisible(true);
        jDlgJogoNovoIA.setTitle("Alteração");
         }
+<<<<<<< HEAD
+========
+        // TODO add your handling code here:
+        jDlgVendasNovoIA.setTitle("Alteração");
+        jDlgVendasNovoIA.setVisible(true);
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendasNovo.java
+    }//GEN-LAST:event_jBtnAlterarActionPerformed
+
+    private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+        // TODO add your handling code here:
+        //Util.perguntar("deseja escluir?");
+        if ((Util.pergunta("excluir?")) == true) {
+            int sel = jTable1.getSelectedRow();
+<<<<<<<< HEAD:src/view/JDlgJogoNovo.java
+=======
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
        if ((Util.pergunta("Excluir?")) == true) {
             int sel = jTable1.getSelectedRow();
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
             jogo = jogoControle.getbean(sel);
             jogoDAO.delete(jogo);
             // Altera os registro da jtable
             List lista = jogoDAO.listALL();
             jogoControle.setList(lista);
+<<<<<<< HEAD
+========
+            vendas = vendasController.getBean(sel);
+            vendasDAO.delete(vendas);
+            // Altera os registro da jtable
+            List lista = vendasDAO.listALL();
+            vendasController.setList(lista);
+>>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendasNovo.java
+        } else
+        {
+           // Util.mensagem("Exclusão cancelada");
+=======
         } else
         {
            Util.mensagem("Exclusão cancelada");
+>>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         
         }
     }//GEN-LAST:event_jBtnExcluirActionPerformed
