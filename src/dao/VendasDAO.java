@@ -63,4 +63,38 @@ public class VendasDAO extends DAO_Abstract{
         VendasDAO vendasAO = new VendasDAO();
     }
     
+    
+    
+    public List listObservacao(String observacao) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfVendas.class);
+        criteria.add(Restrictions.like("mslfObservacao", "%" + observacao + "%"));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    
+    public List listQuantidade(int quantidade) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfVendas.class);
+        criteria.add(Restrictions.ge("mslfQuantidade", new Double(quantidade)));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    
+    public List listObservacaoQuantidade(String observacao, int quantidade) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfVendas.class);
+        criteria.add(Restrictions.like("mslfObservacao", "%" + observacao + "%"));
+        criteria.add(Restrictions.ge("mslfQuantidade", new Double(quantidade)));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    
+    
 }

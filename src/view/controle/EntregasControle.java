@@ -15,13 +15,11 @@ public class EntregasControle extends AbstractTableModel {
 private List lista;
 
 public void setList(List lista){
-this.lista=lista;
-}
-public  void setlist(List lista){
 this.lista = lista;
+this.fireTableDataChanged();
 }
 
-public MslfEntregas getbean(int linha){
+public MslfEntregas getBean(int linha){
 return (MslfEntregas) lista.get(linha);
 }
     @Override
@@ -44,13 +42,13 @@ return (MslfEntregas) lista.get(linha);
              return entregas.getMslfEndereco();
         }
         if (columnIndex == 2) {
-             return entregas.getMslfVendedor();
+             return entregas.getMslfNumeroCasa();
         }
         if (columnIndex == 3) {
              return entregas.getMslfCliente();
         
         }
-       return null;
+       return "";
     }
     @Override
     public String getColumnName(int columnIndex){
@@ -61,12 +59,12 @@ return (MslfEntregas) lista.get(linha);
              return "Endereço";
         }
         if (columnIndex == 2) {
-             return "Vendedor";
+             return "Número de Entrega";
         }
         if (columnIndex == 3) {
              return "Cliente";
         }
        
-    return null;
+    return "";
     }
 }

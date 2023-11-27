@@ -16,6 +16,7 @@ private List lista;
 
 public void setList(List lista){
 this.lista=lista;
+this.fireTableDataChanged();
 }
 
 public MslfVendedor getbean(int linha){

@@ -58,4 +58,35 @@ public class EntregasDAO extends DAO_Abstract{
         session.getTransaction().commit();
         return Lista;
     }
+    
+       public List listCidade(String cidade) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfEntregas.class);
+        criteria.add(Restrictions.like("mslfCidade", "%" + cidade + "%"));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    
+    public List listNumCasa(int numCasa) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfEntregas.class);
+        criteria.add(Restrictions.ge("mslfNumCasa", new Double(numCasa)));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    
+    public List listCidadeNumCasa(String cidade, int numCasa) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfEntregas.class);
+        criteria.add(Restrictions.like("mslfCidade", "%" + cidade + "%"));
+        criteria.add(Restrictions.ge("mslfNumCasa", new Double(numCasa)));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
 }

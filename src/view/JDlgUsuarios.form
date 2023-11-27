@@ -32,10 +32,6 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/JDlgUsuarios.form
-=======
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
@@ -55,19 +51,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jBtnAlterar" min="-2" pref="96" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-<<<<<<< HEAD
                               <Component id="jBtnExcluir" min="-2" max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
-                              <Component id="jBtnExcluir" min="-2" max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
-                              <Component id="jBtnExcluir" min="-2" max="-2" attributes="0"/>
-=======
-                              <Component id="jBtnExlcuir" min="-2" max="-2" attributes="0"/>
->>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                               <Component id="jBtnConfirmar" min="-2" pref="115" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -115,108 +99,12 @@
                   </Group>
               </Group>
               <EmptySpace pref="63" max="32767" attributes="0"/>
-<<<<<<< HEAD
-========
-                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTxtEmail" min="-2" pref="119" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTxtNome" min="-2" pref="150" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTxtRG" min="-2" pref="116" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jFmtCpf" min="-2" pref="146" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTxtID" min="-2" pref="64" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTxtCargaHoraria" min="-2" pref="114" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jCboSexo" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel17" min="-2" pref="116" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jFmtData" min="-2" pref="157" max="-2" attributes="0"/>
-                                      <EmptySpace pref="18" max="32767" attributes="0"/>
-                                      <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jFmtSalario" min="-2" pref="143" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jfmtTelefone" min="-2" pref="146" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTxtIDUsuario" min="-2" pref="79" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="jBtnIncluir" min="-2" pref="98" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jBtnAlterar" min="-2" pref="96" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jBtnExlcuir" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jBtnConfirmar" min="-2" pref="107" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jBtnCancelar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="32767" attributes="0"/>
-                      <Component id="jBtnPesquisar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendedor.form
-=======
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/JDlgUsuarios.form
-=======
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -224,25 +112,6 @@
                   <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jCboNivel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jChbAtivo" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
-========
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="jTxtID" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTxtIDUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jFmtData" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendedor.form
-=======
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -266,84 +135,14 @@
               </Group>
               <EmptySpace pref="39" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/JDlgUsuarios.form
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-========
-                  <Component id="jTxtEmail" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jCboSexo" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTxtNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFmtCpf" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtRG" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFmtSalario" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jfmtTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtCargaHoraria" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace pref="43" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jBtnIncluir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="jBtnAlterar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="jBtnExlcuir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="jBtnConfirmar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" groupAlignment="3" attributes="0">
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendedor.form
-=======
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                       <Component id="jBtnCancelar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                       <Component id="jBtnPesquisar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                       <Component id="jBtnIncluir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                       <Component id="jBtnAlterar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-<<<<<<< HEAD
                       <Component id="jBtnExcluir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
-                      <Component id="jBtnExcluir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-=======
-<<<<<<< HEAD
-                      <Component id="jBtnExcluir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-=======
-                      <Component id="jBtnExlcuir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
->>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                       <Component id="jBtnConfirmar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -353,31 +152,6 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/JDlgUsuarios.form
-========
-    <Component class="javax.swing.JLabel" name="jLabel7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="ID"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtID">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Carga Horaria"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtCargaHoraria">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Salario"/>
-      </Properties>
-    </Component>
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendedor.form
-=======
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     <Component class="javax.swing.JButton" name="jBtnCancelar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -422,19 +196,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnAlterarActionPerformed"/>
       </Events>
     </Component>
-<<<<<<< HEAD
     <Component class="javax.swing.JButton" name="jBtnExcluir">
-=======
-<<<<<<< HEAD
-    <Component class="javax.swing.JButton" name="jBtnExcluir">
-=======
-<<<<<<< HEAD
-    <Component class="javax.swing.JButton" name="jBtnExcluir">
-=======
-    <Component class="javax.swing.JButton" name="jBtnExlcuir">
->>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/img/excluir.png"/>
@@ -442,19 +204,7 @@
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
       <Events>
-<<<<<<< HEAD
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExcluirActionPerformed"/>
-=======
-<<<<<<< HEAD
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExcluirActionPerformed"/>
-=======
-<<<<<<< HEAD
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExcluirActionPerformed"/>
-=======
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExlcuirActionPerformed"/>
->>>>>>> a39f6a3e389fc4532bbcda4e8f5d2756cc862b1d
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnConfirmar">
@@ -480,40 +230,13 @@
         <Property name="text" type="java.lang.String" value="Data de Nascimento"/>
       </Properties>
     </Component>
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/JDlgUsuarios.form
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="text" type="java.lang.String" value="Senha"/>
-========
-    <Component class="javax.swing.JFormattedTextField" name="jFmtCpf">
-    </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtData">
-    </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtSalario">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtIDUsuario">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIDUsuarioActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel22">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="ID de Usuario"/>
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendedor.form
-=======
-    <Component class="javax.swing.JLabel" name="jLabel7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Senha"/>
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
       </Properties>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="jFmtCpf">
     </Component>
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/JDlgUsuarios.form
-=======
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     <Component class="javax.swing.JPasswordField" name="jPwfSenha">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jPwfSenhaActionPerformed"/>
@@ -576,10 +299,5 @@
         <Property name="text" type="java.lang.String" value="Apelido"/>
       </Properties>
     </Component>
-<<<<<<< HEAD
-========
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgVendedor.form
-=======
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
   </SubComponents>
 </Form>

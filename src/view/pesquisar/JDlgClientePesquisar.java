@@ -112,7 +112,7 @@ public class JDlgClientePesquisar extends javax.swing.JDialog {
     private void jBtnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOkActionPerformed
         // TODO add your handling code here:
         int rowSel = jTable1.getSelectedRow();
-        MslfCliente cliente = clienteControle.getbean(rowSel);
+        MslfCliente cliente = clienteControle.getBean(rowSel);
         jDlgCliente.beanView(cliente);
         setVisible(false);
     }//GEN-LAST:event_jBtnOkActionPerformed

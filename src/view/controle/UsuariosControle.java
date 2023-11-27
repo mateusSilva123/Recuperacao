@@ -16,9 +16,7 @@ private List lista;
 
 public void setList(List lista){
 this.lista=lista;
-}
-public  void setlist(List lista){
-this.lista = lista;
+this.fireTableDataChanged();
 }
 
 public MslfUsuarios getbean(int linha){
@@ -50,7 +48,7 @@ return (MslfUsuarios) lista.get(linha);
              return usuarios.getMslfCpf();
         
         }
-       return null;
+       return "";
     }
     @Override
     public String getColumnName(int columnIndex){
@@ -67,6 +65,6 @@ return (MslfUsuarios) lista.get(linha);
              return "CPF";
         }
        
-    return null;
+    return "";
     }
 }

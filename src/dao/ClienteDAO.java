@@ -38,10 +38,10 @@ public  ClienteDAO(){
 
     @Override
     public void delete(Object object) {
-       session.beginTransaction();
-       session.flush();
+      session.beginTransaction();
+        session.flush();
        session.clear();
-       session.delete( object);
+       session.delete(object);
        session.getTransaction().commit();
     }
 
@@ -61,6 +61,37 @@ public  ClienteDAO(){
         Criteria criteria = session.createCriteria(MslfCliente.class);
         List Lista = criteria.list();
         session.getTransaction().commit();
-        return (ArrayList) Lista;
+        return Lista;
+    }
+    
+    public List listRg(int rg) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfCliente.class);
+        criteria.add(Restrictions.ge("mslfRg", new Double(rg)));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    
+    public List listCep(int cep) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfCliente.class);
+        criteria.add(Restrictions.ge("mslfCep", new Double(cep)));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    
+    public List listRgCep(int rg, int cep) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfCliente.class);
+        criteria.add(Restrictions.ge("mslfRg", new Double(rg)));
+        criteria.add(Restrictions.ge("mslfCep", new Double(cep)));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
     }
 }

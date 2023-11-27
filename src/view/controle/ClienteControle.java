@@ -15,18 +15,16 @@ public class ClienteControle extends AbstractTableModel {
 private List lista;
 
 public void setList(List lista){
-this.lista=lista;
-}
-public  void setlist(List lista){
 this.lista = lista;
+this.fireTableDataChanged();
 }
 
-public MslfCliente getbean(int linha){
+public MslfCliente getBean(int linha){
 return (MslfCliente) lista.get(linha);
 }
     @Override
     public int getRowCount() {
-        return lista.size();
+               return lista.size();
     }
 
     @Override
@@ -47,10 +45,10 @@ return (MslfCliente) lista.get(linha);
              return cliente.getMslfApelido();
         }
         if (columnIndex == 3) {
-             return cliente.getMslfCpf();
+             return cliente.getMslfCep();
         
         }
-       return null;
+       return "";
     }
     @Override
     public String getColumnName(int columnIndex){
@@ -64,9 +62,9 @@ return (MslfCliente) lista.get(linha);
              return "Apelido";
         }
         if (columnIndex == 3) {
-             return "CPF";
+             return "CEP";
         }
        
-    return null;
+    return "";
     }
 }

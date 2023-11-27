@@ -28,114 +28,42 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-                      <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jTxtID" min="-2" pref="79" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTxtNome" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
+                                  <Component id="jTxtEmpresa" alignment="0" min="-2" pref="162" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-<<<<<<< HEAD
-=======
-=======
                                           <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-<<<<<<< HEAD
-========
-                                          <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
-<<<<<<< HEAD
-========
-                                          <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
+                                          <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-=======
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-                                      <Component id="jTxtNome" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
-                                      <Component id="jTxtEmpresa" alignment="0" min="-2" pref="162" max="-2" attributes="0"/>
-                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="jTxtPreco" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
-                                          <Component id="jFmtAno" alignment="1" min="-2" pref="115" max="-2" attributes="0"/>
-                                          <Component id="jTxtIdioma" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
-                                      </Group>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-========
-                                      <Component id="jTxtNome" min="-2" pref="164" max="-2" attributes="0"/>
-                                      <Component id="jTxtApelido" min="-2" pref="162" max="-2" attributes="0"/>
-                                      <Component id="jFmtCPF" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
-                                      <Component id="jFmtCep" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
-                                      <Component id="jFmtTelefone" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jTxtPreco" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
+                                      <Component id="jFmtAno" alignment="1" min="-2" pref="115" max="-2" attributes="0"/>
+                                      <Component id="jTxtIdioma" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="178" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-=======
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -164,51 +92,8 @@
                               <Component id="jTxtClassificacao" min="-2" pref="116" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jTxtEstoque" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-========
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTxtCidade" min="-2" pref="116" max="-2" attributes="0"/>
-                                  <Component id="jTxtBairro" min="-2" pref="116" max="-2" attributes="0"/>
-                                  <Component id="jTxtEndereco" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
-                                  <Component id="jTxtEstado" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="56" pref="56" max="-2" attributes="0"/>
-                              <Component id="jTxtRG" min="-2" pref="116" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
                       </Group>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-                      </Group>
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-=======
-                      </Group>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="1" attributes="0">
@@ -218,109 +103,21 @@
                           </Group>
                           <Component id="jTxtAvaliacao" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
                       </Group>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-========
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="jBtnIncluir" min="-2" pref="98" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jBtnAlterar" min="-2" pref="96" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTxtID" min="-2" pref="79" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jBtnExlcuir" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Component id="jBtnConfirmar" min="-2" pref="115" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jBtnCancelar" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jTxtID" min="-2" pref="79" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
               </Group>
-========
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jFmtData" min="-2" pref="115" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTxtIDUsuario" min="-2" pref="79" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                          <Component id="jCboSexo" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jCboCargo" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jPwfSenha" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jTxtEmail" min="-2" pref="125" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace pref="32" max="32767" attributes="0"/>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-=======
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -328,81 +125,6 @@
               </Group>
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-========
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTxtIDUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTxtID" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFmtData" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTxtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jPwfSenha" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jCboCargo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jCboSexo" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTxtEstado" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTxtCidade" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel11" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTxtBairro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTxtEndereco" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtRG" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -411,54 +133,28 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
                           <Component id="jTxtEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
-========
-                          <Component id="jTxtApelido" alignment="3" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jFmtCPF" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jFmtAno" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFmtCep" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTxtPreco" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jFmtTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTxtIdioma" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTxtAvaliacao" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jCboGenero" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-========
-              </Group>
-              <EmptySpace pref="40" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="jBtnCancelar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="jBtnPesquisar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -473,9 +169,15 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTxtEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jCboGenero" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jTxtEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -489,89 +191,8 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-<<<<<<< HEAD
-=======
-=======
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTxtNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTxtEmpresa" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jFmtAno" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTxtPreco" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTxtIdioma" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTxtAvaliacao" min="-2" pref="64" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCboGenero" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace pref="30" max="32767" attributes="0"/>
-                      <Component id="jPanel1" min="-2" pref="40" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTxtClassificacao" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel11" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                                  <Component id="jTxtEdicao" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTxtEstoque" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTxtBrinde" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTxtDesconto" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
           </Group>
       </Group>
     </DimensionLayout>
@@ -698,44 +319,11 @@
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
-<<<<<<< HEAD
-        <Property name="text" type="java.lang.String" value="CEP"/>
-=======
-<<<<<<< HEAD
-        <Property name="text" type="java.lang.String" value="CEP"/>
-=======
         <Property name="text" type="java.lang.String" value="Pre&#xe7;o"/>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-        <Property name="text" type="java.lang.String" value="Endere&#xe7;o"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtEndereco">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Bairro"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtBairro">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Cidade"/>
-      </Properties>
-    </Component>
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-<<<<<<< HEAD
-=======
-=======
         <Property name="text" type="java.lang.String" value="Brinde"/>
       </Properties>
     </Component>
@@ -753,8 +341,6 @@
         <Property name="text" type="java.lang.String" value="Edicao"/>
       </Properties>
     </Component>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     <Component class="javax.swing.JLabel" name="jLabel18">
       <Properties>
         <Property name="text" type="java.lang.String" value="Empresa"/>
@@ -780,42 +366,14 @@
     <Component class="javax.swing.JFormattedTextField" name="jFmtAno">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtEdicao">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-========
-    <Component class="javax.swing.JTextField" name="jTxtCidade">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtEstado">
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtPreco">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel14">
       <Properties>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-        <Property name="text" type="java.lang.String" value="Estado"/>
-      </Properties>
-    </Component>
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-<<<<<<< HEAD
-=======
-=======
         <Property name="text" type="java.lang.String" value="G&#xea;nero"/>
       </Properties>
     </Component>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     <Component class="javax.swing.JComboBox" name="jCboGenero">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -829,70 +387,17 @@
             <StringItem index="6" value="Corrida"/>
             <StringItem index="7" value="Simula&#xe7;&#xe3;o"/>
             <StringItem index="8" value="Esportes"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-========
-    <Component class="javax.swing.JPasswordField" name="jPwfSenha">
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jCboCargo">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="5">
-            <StringItem index="0" value="Cliente"/>
-            <StringItem index="1" value="Doador"/>
-            <StringItem index="2" value="Vendedor"/>
-            <StringItem index="3" value="Administra&#xe7;&#xe3;o"/>
-            <StringItem index="4" value=" "/>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
           </StringArray>
         </Property>
       </Properties>
       <Events>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCboGeneroActionPerformed"/>
-========
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCboCargoActionPerformed"/>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCboGeneroActionPerformed"/>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
     <Component class="javax.swing.JTextField" name="jTxtAvaliacao">
-========
-    <Component class="javax.swing.JTextField" name="jTxtEmail">
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
-    <Component class="javax.swing.JTextField" name="jTxtAvaliacao">
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIdioma">
     </Component>
@@ -901,79 +406,16 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIDActionPerformed"/>
       </Events>
     </Component>
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-=======
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     <Component class="javax.swing.JTextField" name="jTxtClassificacao">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtClassificacaoActionPerformed"/>
       </Events>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-========
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="CPF"/>
-      </Properties>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel13">
       <Properties>
         <Property name="text" type="java.lang.String" value="ID"/>
       </Properties>
     </Component>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-    <Component class="javax.swing.JLabel" name="jLabel15">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Cargo"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="RG"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtRG">
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jCboSexo">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="Feminino"/>
-            <StringItem index="1" value="Masculino"/>
-            <StringItem index="2" value="Outro"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCboSexoActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Sexo"/>
-<<<<<<< HEAD
-=======
-=======
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Desconto"/>
@@ -984,157 +426,17 @@
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="text" type="java.lang.String" value="Classifica&#xe7;&#xe3;o"/>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel16">
       <Properties>
-<<<<<<< HEAD
-        <Property name="text" type="java.lang.String" value="Telefone"/>
-=======
-<<<<<<< HEAD
-        <Property name="text" type="java.lang.String" value="Telefone"/>
-=======
         <Property name="text" type="java.lang.String" value="Idioma"/>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel17">
       <Properties>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
-        <Property name="text" type="java.lang.String" value="Data de Nascimento"/>
-      </Properties>
-    </Component>
-<<<<<<<< HEAD:src/view/IA/JDlgJogoNovoIA.form
-========
-    <Component class="javax.swing.JLabel" name="jLabel18">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Apelido"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtApelido">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel19">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Nome"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel20">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Senha"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtNome">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtNomeActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel21">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Email"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBtnCancelar">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img/cancelar.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Cancelar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnCancelarActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBtnPesquisar">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img/pesquisar.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Pesquisar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnPesquisarActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBtnIncluir">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img/incluir.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Incluir"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnIncluirActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBtnAlterar">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img/alterar.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Alterar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnAlterarActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBtnExlcuir">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img/excluir.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Excluir"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExlcuirActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBtnConfirmar">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img/Confirmado.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Confirmar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnConfirmarActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtCep">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jFmtCepActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtCPF">
-    </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtData">
-    </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtTelefone">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTxtIDUsuario">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIDUsuarioActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel22">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="ID de Usuario"/>
-      </Properties>
-    </Component>
-<<<<<<< HEAD
->>>>>>>> f38b18788bc284862b466ecca84678e102546fb2:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
->>>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc:Trabalho1Bimestre/src/view/JDlgCliente.form
-=======
         <Property name="text" type="java.lang.String" value="Ano"/>
       </Properties>
     </Component>
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
   </SubComponents>
 </Form>

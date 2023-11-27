@@ -15,7 +15,8 @@ public class JogoControle extends AbstractTableModel {
 private List lista;
 
 public void setList(List lista){
-this.lista=lista;
+this.lista = lista;
+this.fireTableDataChanged();
 }
 
 public MslfJogo getbean(int linha){
@@ -38,13 +39,13 @@ return (MslfJogo) lista.get(linha);
              return jogo.getMslfIdJogo();
         }
         if (columnIndex == 1) {
-             return jogo.getMslfEstoque();
+             return jogo.getMslfNome();
         }
         if (columnIndex == 2) {
              return jogo.getMslfPreco();
         }
         if (columnIndex == 3) {
-             return jogo.getMslfDesconto();
+             return jogo.getMslfEstoque();
         
         }
        return null;
@@ -55,13 +56,13 @@ return (MslfJogo) lista.get(linha);
              return "ID";
         }
         if (columnIndex == 1) {
-             return "Estoque";
+             return "Nome";
         }
         if (columnIndex == 2) {
              return "Preço";
         }
         if (columnIndex == 3) {
-             return "Desconto";
+             return "Estoque";
         }
        
     return null;

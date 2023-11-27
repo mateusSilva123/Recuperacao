@@ -63,4 +63,33 @@ public class JogoDAO extends DAO_Abstract{
         JogoDAO jogoDAO = new JogoDAO();
     }
     
+    public List listNome(String nome) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfJogo.class);
+        criteria.add(Restrictions.like("mslfNome", "%" + nome + "%"));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    public List listEstoque(int estoque) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfJogo.class);
+        criteria.add(Restrictions.ge("mslfEstoque", estoque));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
+    
+    public List listNomeEstoque(String nome, int estoque) {
+        session.beginTransaction();
+        Criteria criteria = session.createCriteria(MslfJogo.class);
+        criteria.add(Restrictions.like("mslfNome", "%" + nome + "%"));
+        criteria.add(Restrictions.ge("mslfEstoque", estoque));
+        List Lista = criteria.list();
+        session.getTransaction().commit();
+        
+        return Lista;
+    }
 }

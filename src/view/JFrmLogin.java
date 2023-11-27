@@ -62,6 +62,7 @@ public class JFrmLogin extends javax.swing.JFrame {
 
         jLabel2.setText("Senha");
 
+        jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Confirmado.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
         jBtnConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +70,7 @@ public class JFrmLogin extends javax.swing.JFrame {
             }
         });
 
+        jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
         jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +89,7 @@ public class JFrmLogin extends javax.swing.JFrame {
                     .addComponent(jTxtLogin)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jBtnCancelar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jBtnConfirmar))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,7 +113,7 @@ public class JFrmLogin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtnConfirmar)
                     .addComponent(jBtnCancelar))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
@@ -124,26 +126,11 @@ public class JFrmLogin extends javax.swing.JFrame {
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
         // TODO add your handling code here:
-        String login = jTxtLogin.getText().trim();
-        String senha = jPwfSenha.getText().trim();
-        usuarios = new MslfUsuarios();
-        //usuarios = (MslfUsuarios) usuariosDAO.Validar(login, senha);
+        
+        
             if (tentativas < 4) {
-            if (jTxtLogin.getText().equals("Fonseca") && jPwfSenha.getText().equals("Mateus123"))
+            if (usuariosDAO.validar("MSLF_Apelido", jTxtLogin.getText()).size() != 0 && usuariosDAO.validar("MSLF_Senha", jPwfSenha.getText()).size() != 0)
             {
-                JFrmPrincipal jFrmPrincipals = new JFrmPrincipal();
-                jFrmPrincipals.setVisible(true);
-                this.dispose();
-
-            }
-            else if (jTxtLogin.getText().equals("Jogos") && jPwfSenha.getText().equals("Jogar"))
-            {
-                JFrmPrincipal jFrmPrincipals = new JFrmPrincipal();
-                jFrmPrincipals.setVisible(true);
-                this.dispose();
-
-            }
-            else if (usuarios != null && login.equals(usuarios.getMslfApelido()) && senha.equals(usuarios.getMslfSenha())) {
                 JFrmPrincipal jFrmPrincipals = new JFrmPrincipal();
                 jFrmPrincipals.setVisible(true);
                 this.dispose();
@@ -154,6 +141,7 @@ public class JFrmLogin extends javax.swing.JFrame {
             }
         } else {
             JOptionPane.showMessageDialog(this, "Você errou muitas vezes, tentativas restantes: "+ 0);
+            System.exit(0);
         }
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 

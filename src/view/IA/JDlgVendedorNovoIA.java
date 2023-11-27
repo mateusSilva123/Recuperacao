@@ -13,6 +13,7 @@ import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
 import tools.Util;
 import view.JDlgVendedorNovo;
+import view.controle.VendedorControle;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -26,11 +27,13 @@ import view.JDlgVendedorNovo;
  */
 public class JDlgVendedorNovoIA extends javax.swing.JDialog {
 
-    JDlgVendedorNovo jdlgVendedorNovo;
     MaskFormatter mascaraCpf;
     MaskFormatter mascaraData;
     MaskFormatter mascaraNumero;
     
+    JDlgVendedorNovo jdlgVendedorNovo;
+    JDlgVendedorNovoIA jDlgVendedorNovoIA;
+    VendedorControle vendedorControle;
     
     public JDlgVendedorNovoIA(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -61,15 +64,7 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
         MslfVendedor vendedor = new MslfVendedor(); // criou o bean
         vendedor.setMslfIdVendedor(Util.strInt(jTxtID.getText()));
         vendedor.setMslfCpf(jFmtCpf.getText());
-<<<<<<< HEAD
         vendedor.setMslfDataNasc(Util.strDate(jFmtData.getText()));
-=======
-<<<<<<< HEAD
-        vendedor.setMslfDataNasc(Util.strDate(jFmtData.getText()));
-=======
-        vendedor.setMslfDataNasc(Util.strDate(jFmtCpf.getText()));
->>>>>>> 55df74220d96b2f3edc43084e6b27e73990c10cc
->>>>>>> f38b18788bc284862b466ecca84678e102546fb2
         vendedor.setMslfEmail(jTxtEmail.getText());
         vendedor.setMslfNome(jTxtNome.getText());
         vendedor.setMslfRg(jTxtRG.getText());
@@ -80,6 +75,20 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
        
         return vendedor;
     }
+   
+    public void beanView(MslfVendedor vendedor) {
+        
+        jTxtID.setText(Util.intStr(vendedor.getMslfIdVendedor()));
+        jFmtCpf.setText(vendedor.getMslfCpf());
+        jTxtEmail.setText(vendedor.getMslfEmail());
+        jTxtNome.setText(vendedor.getMslfNome());
+        jTxtRG.setText(vendedor.getMslfRg());
+        jFmtSalario.setText(vendedor.getMslfSalario());
+        jCboSexo.setSelectedItem(vendedor.getMslfSexo());
+        jFmtTelefone.setText(vendedor.getMslfTelefone());
+        jFmtData.setText(Util.dateStr(vendedor.getMslfDataNasc()));
+        jCboUsuarios.setSelectedItem(vendedor.getMslfUsuarios());
+    };
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -176,14 +185,10 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 664, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTxtEmail))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -195,8 +200,12 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addGap(18, 18, 18)
-                        .addComponent(jTxtID, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(52, 52, 52)
+                        .addComponent(jTxtID, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel22)
+                        .addGap(18, 18, 18)
+                        .addComponent(jCboUsuarios, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel16)
@@ -218,13 +227,15 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
                                 .addComponent(jFmtData, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel22))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jCboUsuarios, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jCboSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addGap(30, 30, 30)
+                                .addComponent(jCboSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel21)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTxtEmail)))))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,10 +250,10 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
                         .addComponent(jCboSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel8))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTxtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel17)
-                        .addComponent(jFmtData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel21))
+                        .addComponent(jFmtData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jCboUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel22)))
                 .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -254,12 +265,16 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
                             .addComponent(jLabel5)
                             .addComponent(jFmtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(jFmtSalario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jCboUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel22))
-                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel2)
+                                .addComponent(jFmtSalario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(5, 5, 5)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTxtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel21))))
+                        .addGap(13, 13, 13)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel6)
@@ -267,8 +282,8 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel16)
                                 .addComponent(jFmtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -276,15 +291,41 @@ public class JDlgVendedorNovoIA extends javax.swing.JDialog {
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
         // TODO add your handling code here:
+        setVisible(false);
         this.dispose();
+        Util.limparCampos(jTxtEmail, jTxtID, jTxtNome, jTxtRG, jFmtCpf, jFmtData, jFmtSalario,
+                jFmtTelefone, jCboSexo, jCboUsuarios);
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
     private void jBtnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOkActionPerformed
-        MslfVendedor vendedor = viewBean();
-        VendedorDAO vendedorDAO = new VendedorDAO();
-        vendedorDAO.insert(vendedor);
-        setVisible(false);
-        this.dispose();
+         if (getTitle() == "Inclusão")
+        {
+            MslfVendedor vendedor = viewBean();
+            VendedorDAO vendedorDAO = new VendedorDAO();
+            vendedorDAO.insert(vendedor);
+            
+            List lista = vendedorDAO.listALL();
+            vendedorControle.setList(lista); 
+            
+            setVisible(false);
+            this.dispose();
+        }
+        else if (getTitle() == "Alteração")
+        {
+            MslfVendedor vendedor = viewBean();
+            VendedorDAO vendedorDAO = new VendedorDAO();
+            vendedorDAO.update(vendedor);
+             
+            List lista = vendedorDAO.listALL();
+            vendedorControle.setList(lista); 
+            
+            setVisible(false);
+            this.dispose();
+        }
+        
+            Util.limparCampos(jTxtEmail, jTxtID, jTxtNome, jTxtRG, jFmtCpf, jFmtData, jFmtSalario,
+                jFmtTelefone, jCboSexo, jCboUsuarios);
+
     }//GEN-LAST:event_jBtnOkActionPerformed
 
     private void jTxtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtNomeActionPerformed
